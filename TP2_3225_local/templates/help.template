@@ -1,0 +1,11 @@
+<div id="help">
+    <h1>Help</h1>
+    <p>Here are the routes implemented in this application:</p>
+    <ul>
+        <li><a href="#/help">#/help</a> - Display this help page</li>
+        <li><a href="#/login">#/login</a> - Login to the application</li>
+        <li><a href="#/logout">#/logout</a> - Logout from the application</li>
+        <li><a href="#/stats">#/stats</a> - Display database statistics</li>
+        <li><a href="#/dump/facts">#/dump/facts</a> - Display a table of facts stored in the database</li>
+    </ul>
+</div>
