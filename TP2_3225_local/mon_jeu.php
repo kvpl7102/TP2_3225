@@ -8,21 +8,9 @@
     $conn = new mysqli($servername, $username, $password, $dbName);
 
     // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
     }
-
-    // Queries
-    $sql = "SELECT * FROM $dbName"; // Select all rows from the table
-
-    $sql_stats_facts = "SELECT COUNT(DISTINCT idFact) from $dbName"; // Count the number of distinct facts
-
-    $sql_stats_concepts = "SELECT COUNT(DISTINCT start AS idStart, end AS idEnd) from $dbName"; // Count the number of distinct concepts
-
-    $sql_stats_relations = "SELECT COUNT(DISTINCT relation) from $dbName"; // Count the number of distinct relations
-
-    $sql_stats_user = "SELECT COUNT(DISTINCT user) from user"; // Count the number of distinct users
-
 ?>
 
 
@@ -67,6 +55,60 @@
                 </ul>
             `);
             })
+            this.get('#/login', function() {
+            $('#game-content').html(`
+                <h2>Connexion</h2>
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nom d'utilisateur</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mot de passe</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                </form>
+            `);
+
+            $('#login-form').submit(function(event) {
+                    event.preventDefault();
+                    var username = $('#username').val();
+                    var password = $('#password').val();
+                    if (username === 'ift3225' && password === '5223tfi') {
+                        sessionStorage.setItem('user', username);
+                        location.hash = '#/menu';
+                    } else {
+                        alert('Identifiants incorrects.');
+                    }
+                });
+            });
+
+            this.get('#/menu', function() {
+                if (!sessionStorage.getItem('user')) {
+                    location.hash = '#/login';
+                    return;
+                }
+
+                $('#game-content').html(`
+                    <h2>Menu Principal</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#/jeux/quisuisje/60/10">Jouer à 'Qui suis-je?'</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#/jeux/related/60">Jouer à 'Related'</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#/stats">Afficher les Statistiques</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#/dump/faits">Voir les Faits</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#/logout">Se Déconnecter</a></li>
+                    </ul>
+                `);
+            });
+
+            this.get('#/logout', function() {
+                sessionStorage.removeItem('user');
+                alert('Vous avez été déconnecté.');
+                location.hash = '#/help';
+            });
+
+
             this.get('#/jeux/quisuisje/:temps/:indice', function() {
                 var totalTime = this.params.temps || 60; 
                 var intervalTime = this.params.indice || 10;
@@ -158,3 +200,4 @@
     </script>
 </body>
 </html>
+
