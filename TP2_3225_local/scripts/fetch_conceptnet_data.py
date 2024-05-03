@@ -1,32 +1,94 @@
 import requests
 import json
+import random
 
-def fetch_conceptnet_data(start, rel, end, lang='en'):
-    url = f"http://api.conceptnet.io/query?node=/c/{lang}/{start}&rel=/r/{rel}&other=/c/{lang}/{end}"
+def fetch_conceptnet_data(concept, lang):
+    url = f"http://api.conceptnet.io/query?node=/c/{lang}/{concept}&other=/c/{lang}&limit=30"
     response = requests.get(url)
     data = response.json()
     return data
 
 # List of concepts and relationships
-concepts = ['concept1', 'concept2', 'concept3', 'concept4', 'concept5', 'concept6', 'concept7', 'concept8', 'concept9', 'concept10',
-            'concept11', 'concept12', 'concept13', 'concept14', 'concept15', 'concept16', 'concept17', 'concept18', 'concept19', 'concept20',
-            'concept21', 'concept22', 'concept23', 'concept24', 'concept25', 'concept26', 'concept27', 'concept28', 'concept29', 'concept30',
-            'concept31', 'concept32', 'concept33', 'concept34', 'concept35', 'concept36', 'concept37', 'concept38', 'concept39', 'concept40']
-relationships = ['rel1', 'rel2', 'rel3', 'rel4', 'rel5', 'rel6', 'rel7', 'rel8', 'rel9', 'rel10']
+concepts = {
+    "Apple": "en",
+    "Dog": "en",
+    "Rain": "en",
+    "Book": "en",
+    "Tree": "en",
+    "Car": "en",
+    "Sun": "en",
+    "Moon": "en",
+    "Star": "en",
+    "Ocean": "en",
+    "Mountain": "en",
+    "River": "en",
+    "Flower": "en",
+    "Bird": "en",
+    "Cat": "en",
+    "Fish": "en",
+    "Butterfly": "en",
+    "Leaf": "en",
+    "Snow": "en",
+    "Rainbow": "en",
+    "Pomme": "fr",
+    "Loup": "fr",
+    "Vent": "fr",
+    "Chaise": "fr",
+    "Maison": "fr",
+    "Bateau": "fr",
+    "Étudiant": "fr",
+    "Fromage": "fr",
+    "Lumière": "fr",
+    "Forêt": "fr",
+    "Plage": "fr",
+    "Lac": "fr",
+    "Chapeau": "fr",
+    "Lion": "fr",
+    "Souris": "fr",
+    "Oiseau": "fr",
+    "Abeille": "fr",
+    "Papier": "fr",
+    "Feu": "fr",
+    "Nuage": "fr"
+}
+
+relations = ["IsA", "PartOf", "HasA", "UsedFor", "CapableOf", "AtLocation", "Causes", "HasProperty", "DefinedAs", "RelatedTo"]
 
 facts = []
 
+
 # Generate facts
-for i in range(100):
-    start = concepts[i % len(concepts)]
-    rel = relationships[i % len(relationships)]
-    end = concepts[(i+1) % len(concepts)]
-    data = fetch_conceptnet_data(start, rel, end)
-    facts.append(data)
+for concept, lang in concepts.items():
+    data = fetch_conceptnet_data(concept.lower(), lang)
+    for edge in data['edges']:
+        idFact = edge['@id']
+        start = edge['start']['@id']
+        end = edge['end']['@id']
+        rel = edge['rel']['@id']
+        relLabel = edge['rel']['label']
+        
+        if relLabel in relations:
+            fact = {
+                "idFact": idFact,
+                "start": start,
+                "relation": rel,
+                "end": end
+            }
+            facts.append(fact)
+
+
+    
 
 # Print facts
-for fact in facts:
-    print(json.dumps(fact, indent=4))
+# for fact in facts:
+#     print(json.dumps(fact, indent=4))
 
+# Write facts to a JSON file
 with open('facts.json', 'w') as f:
-    json.dump(facts, f)
+    json.dump(facts, f, indent=4)
+
+
+
+
+
+

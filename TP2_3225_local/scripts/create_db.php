@@ -1,7 +1,27 @@
 <?php
 $facts = json_decode(file_get_contents('facts.json'), true);
 
-$db = new mysqli('localhost', 'your_username', 'your_password');
+$servername = "localhost";
+$username = "root";
+$password = null;
+
+// Create connection
+// $conn =  new mysqli($servername, $username, $password);
+
+// // Check connection
+// if (!$conn) {
+//   die("Connection failed: " . mysqli_connect_error());
+// }
+
+// // Create database
+// $sql = "CREATE DATABASE IF NOT EXISTS ConceptNetDB";
+// if (mysqli_query($conn, $sql)) {
+//   echo "Database created successfully";
+// } else {
+//   echo "Error creating database: " . mysqli_error($conn);
+// }
+
+$db = new mysqli($servername, $username, $password);
 
 if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
@@ -31,4 +51,5 @@ foreach ($facts as $fact) {
 
 $stmt->close();
 $db->close();
+// mysqli_close($conn);
 ?>

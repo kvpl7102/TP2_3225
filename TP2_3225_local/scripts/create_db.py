@@ -5,10 +5,14 @@ with open('facts.json', 'r') as f:
     facts = json.load(f)
 
 # Connect to MySQL server
+servername = "localhost"
+username = "root"
+password = ""
+
 db = mysql.connector.connect(
-    host="localhost",
-    user="your_username",
-    password="your_password"
+    host=servername,
+    user=username,
+    password=password
 )
 
 cursor = db.cursor()
@@ -22,7 +26,7 @@ cursor.execute("USE ConceptNetDB")
 # Create table for facts
 cursor.execute("""
     CREATE TABLE IF NOT EXISTS Facts (
-        id INT AUTO_INCREMENT PRIMARY KEY,
+        idFact VARCHAR(255),
         start VARCHAR(255),
         relation VARCHAR(255),
         end VARCHAR(255)
@@ -31,10 +35,11 @@ cursor.execute("""
 
 # Insert facts into the table
 for fact in facts:
+    idFact = fact['idFact']
     start = fact['start']
-    relation = fact['rel']
+    relation = fact['relation']
     end = fact['end']
-    cursor.execute("INSERT INTO Facts (start, relation, end) VALUES (%s, %s, %s)", (start, relation, end))
+    cursor.execute("INSERT INTO Facts (idFact, start, relation, end) VALUES (%s, %s, %s,%s)", (idFact, start, relation, end))
 
 # Commit changes and close connection
 db.commit()
