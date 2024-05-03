@@ -1,3 +1,19 @@
+<?php 
+    $servername = "localhost";
+    $username = "root";
+    $password = null;
+    $dbName = "ConceptNetDB";
+
+    // Create connection
+    $conn = sqli.connect($servername, $username, $password, $dbName);
+
+    // Check connection
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
