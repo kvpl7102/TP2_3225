@@ -4,15 +4,44 @@
     $password = ""; // Utilise une chaîne vide pour les configurations sans mot de passe
     $dbName = "ConceptNetDB";
 
-    // Create connection
+    // Create connection to Db
     $conn = new mysqli($servername, $username, $password, $dbName);
 
-    // Check connection
+    // Check connection to Db
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-?>
 
+    // Login validation for the user using Db
+    if (isset($_POST['submit'])) { // If the submit button is clicked
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $sql = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
+        $result = $conn->query($sql);
+        
+        if ($result->num_rows > 0) { // If the user exists in the Db
+            $_SESSION['user'] = $username; 
+            header('Location: mon_jeu.php#/menu'); // Redirect to the menu page
+        } else { // If the user does not exist in the Db
+            echo "<script>alert('Identifiants incorrects.');</script>";
+            echo "<script>document.getElementById('login-form').reset();</script>";
+        }
+    }
+
+    // Queries for 'Gestion de base' section
+    $sql = "SELECT * FROM facts"; // Query for #dump/faits route
+
+    // Queries for the #stats route
+    $sql_stats_facts = "SELECT COUNT(DISTINCT id_Fact) AS facts_count FROM facts"; // Count the number of facts 
+    $sql_stats_concepts = "SELECT COUNT(DISTINCT start AS startLabel, end AS endLabel) AS concepts_count FROM facts"; // Count the number of concepts
+    $sql_stats_relations = "SELECT COUNT(DISTINCT relation) AS relations_count FROM facts"; // Count the number of relations
+    $sql_stats_users = "SELECT COUNT(DISTINCT idUser FROM user;" // Count the number of users
+
+    // Queries for 'Consultation de ConceptNet' section
+
+    
+
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -58,16 +87,16 @@
             this.get('#/login', function() {
             $('#game-content').html(`
                 <h2>Connexion</h2>
-                <form id="login-form">
+                <form id="login-form" method="post">
                     <div class="mb-3">
                         <label for="username" class="form-label">Nom d'utilisateur</label>
-                        <input type="text" class="form-control" id="username" required>
+                        <input type="text" class="form-control" id="username" name="username" required>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Mot de passe</label>
-                        <input type="password" class="form-control" id="password" required>
+                        <input type="password" class="form-control" id="password" name="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Se connecter</button>
                 </form>
             `);
 
