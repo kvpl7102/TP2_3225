@@ -3,7 +3,7 @@ import json
 import random
 
 def fetch_conceptnet_data(concept, lang):
-    url = f"http://api.conceptnet.io/query?node=/c/{lang}/{concept}&other=/c/{lang}&limit=30"
+    url = f"http://api.conceptnet.io/query?node=/c/{lang}/{concept}&other=/c/{lang}&limit=20"
     response = requests.get(url)
     data = response.json()
     return data
@@ -30,27 +30,28 @@ concepts = {
     "Leaf": "en",
     "Snow": "en",
     "Rainbow": "en",
-    "Pomme": "fr",
-    "Loup": "fr",
-    "Vent": "fr",
-    "Chaise": "fr",
-    "Maison": "fr",
-    "Bateau": "fr",
-    "Étudiant": "fr",
-    "Fromage": "fr",
-    "Lumière": "fr",
-    "Forêt": "fr",
-    "Plage": "fr",
-    "Lac": "fr",
-    "Chapeau": "fr",
-    "Lion": "fr",
-    "Souris": "fr",
-    "Oiseau": "fr",
-    "Abeille": "fr",
-    "Papier": "fr",
-    "Feu": "fr",
-    "Nuage": "fr"
+    "Potato": "en",
+    "Wolf": "en",
+    "Wind": "en",
+    "Chair": "en",
+    "House": "en",
+    "Boat": "en",
+    "Earth": "en",
+    "Cheese": "en",
+    "Light": "en",
+    "Forest": "en",
+    "Beach": "en",
+    "Lake": "en",
+    "Hat": "en",
+    "Lion": "en",
+    "Mouse": "en",
+    "Bird": "en",
+    "Bee": "en",
+    "Paper": "en",
+    "Fire": "en",
+    "Cloud": "en"
 }
+
 
 relations = ["IsA", "PartOf", "HasA", "UsedFor", "CapableOf", "AtLocation", "Causes", "HasProperty", "DefinedAs", "RelatedTo"]
 
@@ -62,12 +63,12 @@ for concept, lang in concepts.items():
     data = fetch_conceptnet_data(concept.lower(), lang)
     for edge in data['edges']:
         idFact = edge['@id']
-        start = edge['start']['@id']
-        end = edge['end']['@id']
-        rel = edge['rel']['@id']
-        relLabel = edge['rel']['label']
+        start = edge['start']['label']
+        end = edge['end']['label']
+        rel = edge['rel']['label']
+        # relLabel = edge['rel']['label']
         
-        if relLabel in relations:
+        if rel in relations:
             fact = {
                 "idFact": idFact,
                 "start": start,

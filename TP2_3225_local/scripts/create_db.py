@@ -18,6 +18,7 @@ db = mysql.connector.connect(
 cursor = db.cursor()
 
 # Create database
+cursor.execute("DROP DATABASE IF EXISTS ConceptNetDB")
 cursor.execute("CREATE DATABASE IF NOT EXISTS ConceptNetDB")
 
 # Use the new database
