@@ -11,7 +11,18 @@
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    
+
+    // Queries
+    $sql = "SELECT * FROM $dbName"; // Select all rows from the table
+
+    $sql_stats_facts = "SELECT COUNT(DISTINCT idFact) from $dbName"; // Count the number of distinct facts
+
+    $sql_stats_concepts = "SELECT COUNT(DISTINCT start AS idStart, end AS idEnd) from $dbName"; // Count the number of distinct concepts
+
+    $sql_stats_relations = "SELECT COUNT(DISTINCT relation) from $dbName"; // Count the number of distinct relations
+
+    $sql_stats_user = "SELECT COUNT(DISTINCT user) from user"; // Count the number of distinct users
+
 ?>
 
 <!DOCTYPE html>
