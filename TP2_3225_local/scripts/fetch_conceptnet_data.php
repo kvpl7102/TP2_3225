@@ -1,7 +1,7 @@
 <?php
-
+include('scripts/conn_db.php');
 function fetch_conceptnet_data($concept, $lang) {
-    $url = "http://api.conceptnet.io/query?node=/c/{$lang}/{$concept}&other=/c/{$lang}&limit=20";
+    $url = "http://api.conceptnet.io/query?node=/c/{$lang}/{$concept}&other=/c/{$lang}&limit=10";
     $response = file_get_contents($url);
     $data = json_decode($response, true);
     return $data;
@@ -50,7 +50,7 @@ $concepts = array(
     "Cloud" => "en"
 );
 
-$relations = array("IsA", "PartOf", "HasA", "UsedFor", "CapableOf", "AtLocation", "Causes", "HasProperty", "DefinedAs", "RelatedTo");
+$relations = array("IsA", "PartOf", "HasA", "UsedFor", "CapableOf", "AtLocation", "Causes", "HasProperty", "FormOf", "RelatedTo");
 
 $facts = array();
 
