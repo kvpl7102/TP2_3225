@@ -1,30 +1,31 @@
 <?php 
-    $servername = "localhost";
-    $username = "root";
-    $password = ""; // Utilise une chaîne vide pour les configurations sans mot de passe
-    $dbName = "ConceptNetDB";
-
-    // Create connection to Db
-    $conn = new mysqli($servername, $username, $password, $dbName);
-
-    // Check connection to Db
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    include('scripts/conn_db.php');
 
     // Login validation for the user using Db
     if (isset($_POST['submit'])) { // If the submit button is clicked
         $username = $_POST['username'];
         $password = $_POST['password'];
-        $sql = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
-        $result = $conn->query($sql);
+        $username = mysqli_real_escape_string($conn, $username);
+        $password = mysqli_real_escape_string($conn, $password);
         
-        if ($result->num_rows > 0) { // If the user exists in the Db
-            $_SESSION['user'] = $username; 
-            header('Location: mon_jeu.php#/menu'); // Redirect to the menu page
-        } else { // If the user does not exist in the Db
-            echo "<script>alert('Identifiants incorrects.');</script>";
-            echo "<script>document.getElementById('login-form').reset();</script>";
+        $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'" ;
+        $result = $conn->query($sql);
+
+        if (!$result) {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+        $userInfo = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        // print_r($userInfo);
+
+        if (count($userInfo) > 0) {
+            // echo"Login successful!";
+            $_SESSION['user'] = $username;
+            
+            header("Location: #/menu");
+            
+        } else {
+            echo "Invalid username or password.";
         }
     }
 
@@ -45,14 +46,16 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Jeu ConceptNet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sammy@0.7.6/lib/sammy.js"></script>
-    
+
 </head>
+
 <body>
     <div id="main" class="container mt-5">
         <h1 class="mb-4 text-center">Jeu ConceptNet</h1>
@@ -70,7 +73,7 @@
     <script>
     $(document).ready(function() {
         var app = Sammy('#main', function() {
-            this.get('#/help', function(){
+            this.get('#/help', function() {
                 $('#game-content').html(`
                 <h2>Aide et Informations sur les Routes</h2>
                 <ul>
@@ -85,7 +88,7 @@
             `);
             })
             this.get('#/login', function() {
-            $('#game-content').html(`
+                $('#game-content').html(`
                 <h2>Connexion</h2>
                 <form id="login-form" method="post">
                     <div class="mb-3">
@@ -100,24 +103,11 @@
                 </form>
             `);
 
-            $('#login-form').submit(function(event) {
-                    event.preventDefault();
-                    var username = $('#username').val();
-                    var password = $('#password').val();
-                    if (username === 'ift3225' && password === '5223tfi') {
-                        sessionStorage.setItem('user', username);
-                        location.hash = '#/menu';
-                    } else {
-                        alert('Identifiants incorrects.');
-                    }
-                });
+
             });
 
             this.get('#/menu', function() {
-                if (!sessionStorage.getItem('user')) {
-                    location.hash = '#/login';
-                    return;
-                }
+
 
                 $('#game-content').html(`
                     <h2>Menu Principal</h2>
@@ -139,10 +129,12 @@
 
 
             this.get('#/jeux/quisuisje/:temps/:indice', function() {
-                var totalTime = this.params.temps || 60; 
+                var totalTime = this.params.temps || 60;
                 var intervalTime = this.params.indice || 10;
                 var correctAnswer = "chat"; //Start or End Concept(depends)
-                var hints = ["CapableOf miauler", "AtLocation dans la maison", "ReceivesAction caressé"];//(Start+Realation)or(Relation + end)
+                var hints = ["CapableOf miauler", "AtLocation dans la maison",
+                    "ReceivesAction caressé"
+                ]; //(Start+Realation)or(Relation + end)
                 var currentIndex = 0;
                 var score = Math.ceil(totalTime / intervalTime);
                 var interval;
@@ -150,7 +142,8 @@
                 $('#game-content').html('<h2>Qui suis-je ?</h2>' +
                     '<div id="question"></div>' +
                     '<input type="text" id="answer" placeholder="Votre réponse ici">' +
-                    '<button id="submit-button" class="btn btn-primary rounded-pill">Soumettre</button>');
+                    '<button id="submit-button" class="btn btn-primary rounded-pill">Soumettre</button>'
+                );
 
                 function showHint() {
                     if (currentIndex < hints.length && $('#result').text() === "") {
@@ -159,7 +152,8 @@
                         score--;
                     } else {
                         clearInterval(interval);
-                        $('#question').text("Temps écoulé! La réponse était : " + correctAnswer);
+                        $('#question').text("Temps écoulé! La réponse était : " +
+                            correctAnswer);
                         $('#score').text("Score final : " + score);
                     }
                 }
@@ -180,47 +174,48 @@
             });
 
             this.get('#/jeux/related/:temps?', function() {
-            var totalTime = this.params.temps || 60;
-            var concept = "chat"; // Simulé, remplacer par un concept aléatoire de la base
-            var timeoutId;
+                var totalTime = this.params.temps || 60;
+                var concept = "chat"; // Simulé, remplacer par un concept aléatoire de la base
+                var timeoutId;
 
-            $('#game-content').html(
-                '<h2>Related Words to "' + concept + '"</h2>' +
-                '<input type="text" id="related-words" class="form-control mb-3" placeholder="Entrez des mots, séparés par des virgules">' +
-                '<button id="submit-words" class="btn btn-primary">Soumettre</button>'
-            );
+                $('#game-content').html(
+                    '<h2>Related Words to "' + concept + '"</h2>' +
+                    '<input type="text" id="related-words" class="form-control mb-3" placeholder="Entrez des mots, séparés par des virgules">' +
+                    '<button id="submit-words" class="btn btn-primary">Soumettre</button>'
+                );
 
-            timeoutId = setTimeout(() => {
-                evaluateAndDisplayResults();
-            }, totalTime * 1000);
+                timeoutId = setTimeout(() => {
+                    evaluateAndDisplayResults();
+                }, totalTime * 1000);
 
-            $('#submit-words').click(function() {
-                clearTimeout(timeoutId);
-                evaluateAndDisplayResults();
-            });
-
-            function evaluateAndDisplayResults() {
-                var userInput = $('#related-words').val();
-                var words = userInput.split(',');
-                var validWords = []; // Simulation, remplacer par les vrais mots valides tirés de ConceptNet
-                var invalidWords = [];
-
-                words.forEach(word => {
-                    word = word.trim().toLowerCase();
-                    // Ici, on vérifiera si le mot est lié au concept (simulation)
-                    if (word === concept) { // Simplifié pour l'exemple
-                        validWords.push(word);
-                    } else {
-                        invalidWords.push(word);
-                    }
+                $('#submit-words').click(function() {
+                    clearTimeout(timeoutId);
+                    evaluateAndDisplayResults();
                 });
 
-                $('#result').html(
-                    '<p>Mots valides: ' + validWords.join(', ') + '</p>' +
-                    '<p>Mots invalides: ' + invalidWords.join(', ') + '</p>'
-                );
-                $('#score').text('Score: ' + validWords.length);
-            }
+                function evaluateAndDisplayResults() {
+                    var userInput = $('#related-words').val();
+                    var words = userInput.split(',');
+                    var
+                        validWords = []; // Simulation, remplacer par les vrais mots valides tirés de ConceptNet
+                    var invalidWords = [];
+
+                    words.forEach(word => {
+                        word = word.trim().toLowerCase();
+                        // Ici, on vérifiera si le mot est lié au concept (simulation)
+                        if (word === concept) { // Simplifié pour l'exemple
+                            validWords.push(word);
+                        } else {
+                            invalidWords.push(word);
+                        }
+                    });
+
+                    $('#result').html(
+                        '<p>Mots valides: ' + validWords.join(', ') + '</p>' +
+                        '<p>Mots invalides: ' + invalidWords.join(', ') + '</p>'
+                    );
+                    $('#score').text('Score: ' + validWords.length);
+                }
             });
         });
 
@@ -228,5 +223,5 @@
     });
     </script>
 </body>
-</html>
 
+</html>
