@@ -16,32 +16,17 @@
         }
 
         $userInfo = mysqli_fetch_all($result, MYSQLI_ASSOC);
-        // print_r($userInfo);
 
         if (count($userInfo) > 0) {
-            // echo"Login successful!";
-            $_SESSION['user'] = $username;
             
+            $_SESSION['user'] = $username;            
             header("Location: #/menu");
             
         } else {
-            echo "Invalid username or password.";
+            echo "invalid credentials";
+            // header("Location: #/login");
         }
     }
-
-    // Queries for 'Gestion de base' section
-    $sql = "SELECT * FROM facts"; // Query for #dump/faits route
-
-    // Queries for the #stats route
-    $sql_stats_facts = "SELECT COUNT(DISTINCT id_Fact) AS facts_count FROM facts"; // Count the number of facts 
-    $sql_stats_concepts = "SELECT COUNT(DISTINCT start AS startLabel, end AS endLabel) AS concepts_count FROM facts"; // Count the number of concepts
-    $sql_stats_relations = "SELECT COUNT(DISTINCT relation) AS relations_count FROM facts"; // Count the number of relations
-    $sql_stats_users = "SELECT COUNT(DISTINCT idUser FROM user;" // Count the number of users
-
-    // Queries for 'Consultation de ConceptNet' section
-
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -50,9 +35,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Jeu ConceptNet</title>
+
+    <!-- CSS links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.6/css/dataTables.dataTables.css" />
+  
+    <!-- JS links -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.6/js/dataTables.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sammy@0.7.6/lib/sammy.js"></script>
+    
 
 </head>
 
@@ -69,8 +61,8 @@
         <div id="result"></div>
         <div id="score"></div>
     </div> -->
-
     <script>
+        
     $(document).ready(function() {
         var app = Sammy('#main', function() {
             this.get('#/help', function() {
@@ -102,12 +94,9 @@
                     <button type="submit" name="submit" class="btn btn-primary">Se connecter</button>
                 </form>
             `);
-
-
             });
 
             this.get('#/menu', function() {
-
 
                 $('#game-content').html(`
                     <h2>Menu Principal</h2>
@@ -126,7 +115,6 @@
                 alert('Vous avez Ã©tÃ© dÃ©connectÃ©.');
                 location.hash = '#/help';
             });
-
 
             this.get('#/jeux/quisuisje/:temps/:indice', function() {
                 var totalTime = this.params.temps || 60;
@@ -217,11 +205,134 @@
                     $('#score').text('Score: ' + validWords.length);
                 }
             });
+
+            this.get('#/stats', function() {
+                $('#game-content').html(`
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col lg-2"></div>
+                            <div class="col lg-8">
+                                <div class="row">
+                                    <h2>Statistiques de la base</h2><br><br>
+                                    <br>
+                                </div>
+                                <div class="row">
+                                    <?php 
+                                        // Count the number of users
+                                        $query_stats_numusers = "SELECT COUNT(DISTINCT idUser) FROM users"; 
+                                        $result_numusers = $conn->query($query_stats_numusers);
+                                        if($result_numusers) {
+                                            $numusers = mysqli_fetch_all($result_numusers, MYSQLI_ASSOC);
+                                            echo "<h4>Nombre d'utilisateurs: " . $numusers[0]['COUNT(DISTINCT idUser)'] . "</h4>";
+                                        } else {
+                                            echo "<h4>Échec de requête à la base :(</h4>";
+                                        }
+                                        
+                                        // --------------------------------------------------------------
+                                        // Count the number of facts
+                                        $query_stats_facts = "SELECT COUNT(DISTINCT idFact) FROM facts"; 
+                                        $result_facts = $conn->query($query_stats_facts);
+                                        if ($result_facts) {
+                                            $facts = mysqli_fetch_all($result_facts, MYSQLI_ASSOC);
+                                            echo "<h4>Nombre de faits: " . $facts[0]['COUNT(DISTINCT idFact)'] . "</h4>";
+                                        } else {
+                                            echo "<h4>Échec de requête à la base :(</h4>";
+                                        }
+
+                                        // --------------------------------------------------------------
+                                        // Count the number of concepts
+                                        $query_stats_concepts = "SELECT COUNT(DISTINCT start, end) FROM facts"; 
+                                        $result_concepts = $conn->query($query_stats_concepts);
+                                        if ($result_concepts) {
+                                            $concepts = mysqli_fetch_all($result_concepts, MYSQLI_ASSOC);
+                                            echo "<h4>Nombre de concepts: " . $concepts[0]['COUNT(DISTINCT start, end)'] . "</h4>";
+                                        } else {
+                                            echo "<h4>Échec de requête à la base :(</h4>";
+                                        }
+
+                                        // --------------------------------------------------------------
+                                        // Count the number of relations
+                                        $query_stats_relations = "SELECT COUNT(DISTINCT relation) FROM facts"; 
+                                        $result_relations = $conn->query($query_stats_relations);
+                                        if ($result_relations) {
+                                            $relations = mysqli_fetch_all($result_relations, MYSQLI_ASSOC);
+                                            echo "<h4>Nombre de relations: " . $relations[0]['COUNT(DISTINCT relation)'] . "</h4>";
+                                        } else {
+                                            echo "<h4>Échec de requête à la base :(</h4>";
+                                        }
+                                    ?>
+                                </div>  
+                            </div>
+                            <div class="col lg-2"></div>
+                        </div>
+                    </div>
+                `  
+                );
+            });
+
+            this.get('#/dump/faits' ,function(){
+                $('#game-content').html(`
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col lg-2"></div>
+                            <div class="col lg-12">
+                                <div class="row">
+                                    <h2>Table des Faits</h2><br>
+                                </div>
+                            </div>
+                            <div class="col lg-2"></div>
+                        </div>
+                        <div class="table responsive">
+                            <table class="table table-bordered table-hover" id="facts-table">
+                                <thead>
+                                    <tr>
+                                        <th>Start</th>
+                                        <th>Relation</th>
+                                        <th>End</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php 
+                                        $query_facts_all = "SELECT * FROM facts";
+                                        $result = $conn->query($query_facts_all);
+
+                                        $facts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                                        foreach ($facts as $fact) {
+                                            echo "<tr>";
+                                            echo "<td>" . strtolower($fact['start']) . "</td>";
+                                            echo "<td>" . $fact['relation'] . "</td>";
+                                            echo "<td>" . strtolower($fact['end']) . "</td>";
+                                            echo "</tr>";
+                                        }
+                                    ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `);
+
+                $.ajax({
+                    url: 'mon_jeu.php',
+                    type: 'GET',
+                    success: function(data) {
+                        $('#facts-table').DataTable(
+                            {
+                                "info": true,
+                                "paging": true,
+                                "ordering": false,
+                                "searching": true, 
+                                "scrollY": "300px",
+                                "scrollCollapse": true,                                                         
+                            }
+                         );
+                    }
+                });
+            });
         });
 
         app.run();
     });
     </script>
-</body>
+
 
 </html>
