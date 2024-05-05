@@ -76,9 +76,11 @@
                     <li><b>#/dump/faits</b> : Affiche une table contenant les faits stockés dans la base de données avec un système de pagination.</li>
                     <li><b>#/jeux/quisuisje/:temps/:indice</b> : Jeu 'Qui suis-je?' où l'utilisateur doit deviner un concept à partir d'indices fournis.</li>
                     <li><b>#/jeux/related/:temps</b> : Jeu 'Related' où l'utilisateur doit entrer des mots liés à un concept donné.</li>
+                    
                 </ul>
             `);
-            })
+            });
+
             this.get('#/login', function() {
                 $('#game-content').html(`
                 <h2>Connexion</h2>
@@ -286,9 +288,9 @@
                             <table class="table table-bordered table-hover" id="facts-table">
                                 <thead>
                                     <tr>
-                                        <th>Start</th>
-                                        <th>Relation</th>
-                                        <th>End</th>
+                                        <th style='text-align: center'>Start node label</th>
+                                        <th style='text-align: center'>Relation</th>
+                                        <th style='text-align: center'>End node label</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -299,9 +301,9 @@
                                         $facts = mysqli_fetch_all($result, MYSQLI_ASSOC);
                                         foreach ($facts as $fact) {
                                             echo "<tr>";
-                                            echo "<td>" . strtolower($fact['start']) . "</td>";
-                                            echo "<td>" . $fact['relation'] . "</td>";
-                                            echo "<td>" . strtolower($fact['end']) . "</td>";
+                                            echo "<td style='text-align: center'>" . strtolower($fact['start']) . "</td>";
+                                            echo "<td style='text-align: center'>" . $fact['relation'] . "</td>";
+                                            echo "<td style='text-align: center'>" . strtolower($fact['end']) . "</td>";
                                             echo "</tr>";
                                         }
                                     ?>
@@ -328,11 +330,394 @@
                     }
                 });
             });
-        });
 
+            this.get('#/concept/:langue/:concept', function(context) {
+                var concept = context.params.concept;
+                var langue = context.params.langue;
+
+                $('#game-content').html(`
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 id="concept-header">Concept actuel: ${concept} </h4>
+                        <h4 id="langue-header">Langue actuelle: ${langue} </h4>
+
+                        <label for="langue" style="margin-right: 5px;">Langue (en/fr):</label>
+                        <input type="text" id="langue" name="langue" style="margin-right: 10px;">
+                        <label for="concept" style="margin-right: 5px;">Concept:</label>
+                        <input type="text" id="concept" name="concept" style="margin-right: 10px;">
+                        <button id="query-button" style="margin-top: 20px;">Query ConceptNet</button><br>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col lg-2"></div>
+                            <div class="col lg-12">
+                                <div class="row">
+                                    <h2>Table de concept requis</h2><br>
+                                </div>
+                            </div>
+                            <div class="col lg-2"></div>
+                        </div>
+                        <div class="table responsive">
+                            <table class="table table-bordered table-hover" id="query-concept-table">
+                                <thead>
+                                    <tr>
+                                        <th style='text-align: center'>Start node label</th>
+                                        <th style='text-align: center'>Relation</th>
+                                        <th style='text-align: center'>End node label</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `);
+
+                // Make AJAX request to fetch data from ConceptNet API
+                $.ajax({
+                    url: `https://api.conceptnet.io/query?node=/c/${langue}/${concept}`,
+                    type: 'GET',
+                    data: {
+                        concept: concept,
+                        langue: langue
+                    },
+                    success: function(data) {
+                        var edges = data.edges; 
+                        var tableBody = $('#query-concept-table tbody');
+
+                        edges.forEach(function(edge) {
+                            var startLabel = edge.start.label.toLowerCase();
+                            var relation = edge.rel.label;
+                            var endLabel = edge.end.label.toLowerCase();
+
+                            var tableRow = `
+                                <tr>
+                                    <td style='text-align: center'>${startLabel}</td>
+                                    <td style='text-align: center'>${relation}</td>
+                                    <td style='text-align: center'>${endLabel}</td>
+                                </tr>
+                            `;
+
+                            tableBody.append(tableRow);
+                        });
+                        
+                        $('#query-concept-table').DataTable(
+                            {
+                                "info": true,
+                                "paging": true,
+                                "ordering": false,
+                                "searching": true, 
+                                "scrollY": "250px",
+                                "scrollCollapse": true,                                                         
+                            }
+                        );
+                    }
+                });
+
+                // If query button is clicked, validate the input and redirect to the new URL of corresponding concept
+                $('#query-button').click(function() {
+                    var langue = $('#langue').val();
+                    var concept = $('#concept').val();
+
+                    
+                    if (langue.toLowerCase() !== 'en' && langue.toLowerCase() !== 'fr') {
+                        alert('Langue invalide. Veuillez entrer "en" ou "fr".');
+                        $('#langue').focus();
+                        return;
+                    }
+
+                    if (!concept) {
+                        alert('Veuillez entrer un concept.');
+                        $('#concept').focus();
+                        return;
+                    }
+
+                    // Update the headers
+                    $('#concept-header').text('Concept actuel: ' + concept);
+                    $('#langue-header').text('Langue actuelle: ' + langue);
+
+                    // Construct the URL for the ConceptNet API
+                    var url = 'https://api.conceptnet.io/query?node=/c/' + langue + '/' + concept;
+
+                    // Redirect to the new URL
+                    context.redirect('#/concept/' + langue.toLowerCase() + '/' + concept.toLowerCase());
+                        
+
+                    // Make new AJAX request
+                    // $.ajax({
+                    //     url: url,
+                    //     type: 'GET',
+                    //     success: function(data) {
+                    //         console.log("successfully fetched new data");
+                            
+                    //         var edges = data.edges;
+                    //         var tableBody = $('#query-concept-table tbody');
+                            
+
+                    //         // Empty the table
+                    //         tableBody.empty();
+
+                    //         // Fill the table with new data
+                    //         edges.forEach(function(edge) {
+                    //             var startLabel = edge.start.label.toLowerCase();
+                    //             var relation = edge.rel.label;
+                    //             var endLabel = edge.end.label.toLowerCase();
+
+                    //             var tableRow = `
+                    //                 <tr>
+                    //                     <td style='text-align: center'>${startLabel}</td>
+                    //                     <td style='text-align: center'>${relation}</td>
+                    //                     <td style='text-align: center'>${endLabel}</td>
+                    //                 </tr>
+                    //             `;
+
+                    //             tableBody.append(tableRow);
+                    //         });
+                    //     },
+                    //     error: function() {
+                    //         console.log('Error fetching data from ConceptNet');
+                    //     }
+                    // });
+                });
+                
+            });
+
+            this.get('#/relation/:relation/from/:langue/:concept', function(context) {
+                var relation = context.params.relation;
+                var langue = context.params.langue;
+                var start_concept = context.params.concept;
+
+                $('#game-content').html(`
+                    <div class="d-flex flex-column align-items-center">
+                        <h5 id="start-concept-header">Concept actuel: ${start_concept} </h5>
+                        <h5 id="langue-header">Langue actuelle: ${langue} </h5>
+                        <h5 id="relation-header">Relation actuelle: ${relation} </h5>
+
+                        <label for="start-langue" style="margin-right: 5px;">Langue (en/fr):</label>
+                        <input type="text" id="start-langue" name="langue" style="margin-right: 10px;">
+                        <label for="start-concept" style="margin-right: 5px;">Concept:</label>
+                        <input type="text" id="start-concept" name="start-concept" style="margin-right: 10px;">
+                        <label for="relation" style="margin-right: 5px;">Relation:</label>
+                        <input type="text" id="relation" name="relation" style="margin-right: 10px;">
+
+                        <button id="query-from-button" style="margin-top: 20px;">Query ConceptNet</button><br>
+                        <a href="https://github.com/commonsense/conceptnet5/wiki/Relations" target="_blank">Consulter toutes relations de ConceptNet</a><br>
+
+
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col lg-2"></div>
+                            <div class="col lg-12">
+                                <div class="row">
+                                    <h2>Table des end-noeuds d'un concept requis</h2><br>
+                                </div>
+                            </div>
+                            <div class="col lg-2"></div>
+                        </div>
+                        <div class="table responsive">
+                            <table class="table table-bordered table-hover" id="query-from-concept-table">
+                                <thead>
+                                    <tr>
+                                        <th style='text-align: center'>Concept queried</th>
+                                        <th style='text-align: center'>Relation</th>
+                                        <th style='text-align: center'>End node label</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `);
+                
+                $.ajax({
+                    url: `https://api.conceptnet.io/query?start=/c/${langue}/${start_concept}&rel=/r/${relation}`,
+                    type: 'GET',
+                    data: {
+                        start_concept: start_concept,
+                        langue: langue,
+                        relation: relation
+                    },
+                    success: function(data) {
+                        var edges = data.edges; 
+                        var tableBody = $('#query-from-concept-table tbody');
+
+                        edges.forEach(function(edge) {
+                            var startLabel = edge.start.label.toLowerCase();
+                            var rel = edge.rel.label;
+                            var endLabel = edge.end.label.toLowerCase();
+
+                            var tableRow = `
+                                <tr>
+                                    <td style='text-align: center'>${startLabel}</td>
+                                    <td style='text-align: center'>${rel}</td>
+                                    <td style='text-align: center'>${endLabel}</td>
+                                </tr>
+                            `;
+
+                            tableBody.append(tableRow);
+                        });
+                
+                        $('#query-from-concept-table').DataTable(
+                            {
+                                "info": true,
+                                "paging": true,
+                                "ordering": false,
+                                "searching": true, 
+                                "scrollY": "250px",
+                                "scrollCollapse": true,                                                         
+                            }
+                        );
+                    }
+                });
+
+                $('#query-from-button').click(function() {
+                    var langue = $('#start-langue').val();
+                    var start_concept = $('#start-concept').val();
+                    var relation = $('#relation').val();
+
+                    
+                    if (langue.toLowerCase() !== 'en' && langue.toLowerCase() !== 'fr') {
+                        alert('Langue invalide. Veuillez entrer "en" ou "fr".');
+                        $('#start-langue').focus();
+                        return;
+                    }
+
+                    if (!start_concept) {
+                        alert('Veuillez entrer un concept.');
+                        $('#start-concept').focus();
+                        return;
+                    }
+                    
+                    if (!relation) {
+                        alert('Veuillez entrer une relation.');
+                        $('#relation').focus();
+                        return;
+                    }
+
+                    // Update the headers
+                    $('#start-concept-header').text('Concept actuel: ' + start_concept);
+                    $('#langue-header').text('Langue actuelle: ' + langue);
+                    $('#relation-header').text('Relation actuelle: ' + relation);
+
+                    // Construct the URL for the ConceptNet API
+                    var url = 'https://api.conceptnet.io/query?start=/c/' + langue.toLowerCase() + '/' + concept.toLowerCase() + '&rel=/r/' + relation;
+
+                    // Redirect to the new URL
+                    context.redirect('#/relation/' + relation + '/'+ langue + '/' + start_concept);
+                });
+                
+            });
+
+            this.get('#/relation/:relation', function(context) {
+                var relation = context.params.relation;
+
+                $('#game-content').html(`
+                    <div class="d-flex flex-column align-items-center">
+                        <h4 id="relation-header">Relation actuelle: ${relation} </h4>
+
+                        <label for="relation" style="margin-right: 5px;">Relation:</label>
+                        <input type="text" id="relation" name="relation" style="margin-right: 10px;">
+
+                        <button id="query-relation-button" style="margin-top: 20px;">Query ConceptNet</button><br>
+                        <a href="https://github.com/commonsense/conceptnet5/wiki/Relations" target="_blank">Consulter toutes relations de ConceptNet</a><br>
+
+                    </div>
+                    <br>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col lg-2"></div>
+                            <div class="col lg-12">
+                                <div class="row">
+                                    <h2>Table de relation requise</h2><br>
+                                </div>
+                            </div>
+                            <div class="col lg-2"></div>
+                        </div>
+                        <div class="table responsive">
+                            <table class="table table-bordered table-hover" id="query-relation-table">
+                                <thead>
+                                    <tr>
+                                        <th style='text-align: center'>Start node label</th>
+                                        <th style='text-align: center'>Relation</th>
+                                        <th style='text-align: center'>End node label</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `);
+
+                $.ajax({
+                    url: `https://api.conceptnet.io/query?rel=/r/${relation}&limit=1000`,
+                    type: 'GET',
+                    data: {
+                        relation: relation
+                    },
+                    success: function(data) {
+                        var edges = data.edges; 
+                        var tableBody = $('#query-relation-table tbody');
+
+                        edges.forEach(function(edge) {
+                            var startLabel = edge.start.label.toLowerCase();
+                            var rel = edge.rel.label;
+                            var endLabel = edge.end.label.toLowerCase();
+
+                            var tableRow = `
+                                <tr>
+                                    <td style='text-align: center'>${startLabel}</td>
+                                    <td style='text-align: center'>${rel}</td>
+                                    <td style='text-align: center'>${endLabel}</td>
+                                </tr>
+                            `;
+
+                            tableBody.append(tableRow);
+                        });
+                
+                        $('#query-relation-table').DataTable(
+                            {
+                                "info": true,
+                                "paging": true,
+                                "ordering": false,
+                                "searching": true, 
+                                "scrollY": "250px",
+                                "scrollCollapse": true,                                                         
+                            }
+                        );
+                    }
+                });
+
+                $('#query-relation-button').click(function() {
+                    var relation = $('#relation').val();
+                    
+                    if (!relation) {
+                        alert('Veuillez entrer une relation.');
+                        $('#relation').focus();
+                        return;
+                    }
+
+                    // Update the headers
+                    $('#relation-header').text('Relation actuelle: ' + relation);
+
+                    // Construct the URL for the ConceptNet API
+                    var url = 'https://api.conceptnet.io/query?&rel=/r/' + relation;
+
+                    // Redirect to the new URL
+                    context.redirect('#/relation/' + relation);
+                });
+            });
+    
+        });
         app.run();
     });
     </script>
-
+    
 
 </html>
