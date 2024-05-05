@@ -84,5 +84,3 @@ function getHelp() { // Display the API documentation
     echo $documentation;
 }
 ?>
-
-?>
