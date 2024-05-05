@@ -1,1 +1,4250 @@
-[{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/doctor&rel=\/r\/IsA&other=\/c\/en\/m\u00e9decin","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/m\u00e9decin&rel=\/r\/PartOf&other=\/c\/en\/nurse","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/nurse&rel=\/r\/HasA&other=\/c\/en\/infirmi\u00e8re","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/infirmi\u00e8re&rel=\/r\/UsedFor&other=\/c\/en\/teacher","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/teacher&rel=\/r\/CapableOf&other=\/c\/en\/enseignant","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/enseignant&rel=\/r\/AtLocation&other=\/c\/en\/engineer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/engineer&rel=\/r\/Requires&other=\/c\/en\/ing\u00e9nieur","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/ing\u00e9nieur&rel=\/r\/Desires&other=\/c\/en\/scientist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/scientist&rel=\/r\/CreatedBy&other=\/c\/en\/scientifique","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/scientifique&rel=\/r\/HasPrerequisite&other=\/c\/en\/lawyer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/lawyer&rel=\/r\/IsA&other=\/c\/en\/avocat","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/avocat&rel=\/r\/PartOf&other=\/c\/en\/journalist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/journalist&rel=\/r\/HasA&other=\/c\/en\/journaliste","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/journaliste&rel=\/r\/UsedFor&other=\/c\/en\/chef","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/chef&rel=\/r\/CapableOf&other=\/c\/en\/chef","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/chef&rel=\/r\/AtLocation&other=\/c\/en\/actor","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/actor&rel=\/r\/Requires&other=\/c\/en\/acteur","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/acteur&rel=\/r\/Desires&other=\/c\/en\/musician","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/musician&rel=\/r\/CreatedBy&other=\/c\/en\/musicien","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/musicien&rel=\/r\/HasPrerequisite&other=\/c\/en\/writer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/writer&rel=\/r\/IsA&other=\/c\/en\/\u00e9crivain","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/\u00e9crivain&rel=\/r\/PartOf&other=\/c\/en\/artist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/artist&rel=\/r\/HasA&other=\/c\/en\/artiste","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/artiste&rel=\/r\/UsedFor&other=\/c\/en\/photographer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/photographer&rel=\/r\/CapableOf&other=\/c\/en\/photographe","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/photographe&rel=\/r\/AtLocation&other=\/c\/en\/designer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/designer&rel=\/r\/Requires&other=\/c\/en\/designer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/designer&rel=\/r\/Desires&other=\/c\/en\/architect","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/architect&rel=\/r\/CreatedBy&other=\/c\/en\/architecte","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/architecte&rel=\/r\/HasPrerequisite&other=\/c\/en\/dentist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/dentist&rel=\/r\/IsA&other=\/c\/en\/dentiste","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/dentiste&rel=\/r\/PartOf&other=\/c\/en\/pharmacist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pharmacist&rel=\/r\/HasA&other=\/c\/en\/pharmacien","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pharmacien&rel=\/r\/UsedFor&other=\/c\/en\/psychologist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/psychologist&rel=\/r\/CapableOf&other=\/c\/en\/psychologue","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/psychologue&rel=\/r\/AtLocation&other=\/c\/en\/veterinarian","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/veterinarian&rel=\/r\/Requires&other=\/c\/en\/v\u00e9t\u00e9rinaire","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/v\u00e9t\u00e9rinaire&rel=\/r\/Desires&other=\/c\/en\/pilot","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pilot&rel=\/r\/CreatedBy&other=\/c\/en\/pilote","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pilote&rel=\/r\/HasPrerequisite&other=\/c\/en\/doctor","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/doctor&rel=\/r\/IsA&other=\/c\/en\/m\u00e9decin","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/m\u00e9decin&rel=\/r\/PartOf&other=\/c\/en\/nurse","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/nurse&rel=\/r\/HasA&other=\/c\/en\/infirmi\u00e8re","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/infirmi\u00e8re&rel=\/r\/UsedFor&other=\/c\/en\/teacher","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/teacher&rel=\/r\/CapableOf&other=\/c\/en\/enseignant","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/enseignant&rel=\/r\/AtLocation&other=\/c\/en\/engineer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/engineer&rel=\/r\/Requires&other=\/c\/en\/ing\u00e9nieur","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/ing\u00e9nieur&rel=\/r\/Desires&other=\/c\/en\/scientist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/scientist&rel=\/r\/CreatedBy&other=\/c\/en\/scientifique","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/scientifique&rel=\/r\/HasPrerequisite&other=\/c\/en\/lawyer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/lawyer&rel=\/r\/IsA&other=\/c\/en\/avocat","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/avocat&rel=\/r\/PartOf&other=\/c\/en\/journalist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/journalist&rel=\/r\/HasA&other=\/c\/en\/journaliste","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/journaliste&rel=\/r\/UsedFor&other=\/c\/en\/chef","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/chef&rel=\/r\/CapableOf&other=\/c\/en\/chef","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/chef&rel=\/r\/AtLocation&other=\/c\/en\/actor","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/actor&rel=\/r\/Requires&other=\/c\/en\/acteur","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/acteur&rel=\/r\/Desires&other=\/c\/en\/musician","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/musician&rel=\/r\/CreatedBy&other=\/c\/en\/musicien","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/musicien&rel=\/r\/HasPrerequisite&other=\/c\/en\/writer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/writer&rel=\/r\/IsA&other=\/c\/en\/\u00e9crivain","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/\u00e9crivain&rel=\/r\/PartOf&other=\/c\/en\/artist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/artist&rel=\/r\/HasA&other=\/c\/en\/artiste","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/artiste&rel=\/r\/UsedFor&other=\/c\/en\/photographer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/photographer&rel=\/r\/CapableOf&other=\/c\/en\/photographe","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/photographe&rel=\/r\/AtLocation&other=\/c\/en\/designer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/designer&rel=\/r\/Requires&other=\/c\/en\/designer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/designer&rel=\/r\/Desires&other=\/c\/en\/architect","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/architect&rel=\/r\/CreatedBy&other=\/c\/en\/architecte","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/architecte&rel=\/r\/HasPrerequisite&other=\/c\/en\/dentist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/dentist&rel=\/r\/IsA&other=\/c\/en\/dentiste","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/dentiste&rel=\/r\/PartOf&other=\/c\/en\/pharmacist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pharmacist&rel=\/r\/HasA&other=\/c\/en\/pharmacien","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pharmacien&rel=\/r\/UsedFor&other=\/c\/en\/psychologist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/psychologist&rel=\/r\/CapableOf&other=\/c\/en\/psychologue","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/psychologue&rel=\/r\/AtLocation&other=\/c\/en\/veterinarian","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/veterinarian&rel=\/r\/Requires&other=\/c\/en\/v\u00e9t\u00e9rinaire","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/v\u00e9t\u00e9rinaire&rel=\/r\/Desires&other=\/c\/en\/pilot","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pilot&rel=\/r\/CreatedBy&other=\/c\/en\/pilote","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/pilote&rel=\/r\/HasPrerequisite&other=\/c\/en\/doctor","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/doctor&rel=\/r\/IsA&other=\/c\/en\/m\u00e9decin","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/m\u00e9decin&rel=\/r\/PartOf&other=\/c\/en\/nurse","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/nurse&rel=\/r\/HasA&other=\/c\/en\/infirmi\u00e8re","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/infirmi\u00e8re&rel=\/r\/UsedFor&other=\/c\/en\/teacher","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/teacher&rel=\/r\/CapableOf&other=\/c\/en\/enseignant","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/enseignant&rel=\/r\/AtLocation&other=\/c\/en\/engineer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/engineer&rel=\/r\/Requires&other=\/c\/en\/ing\u00e9nieur","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/ing\u00e9nieur&rel=\/r\/Desires&other=\/c\/en\/scientist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/scientist&rel=\/r\/CreatedBy&other=\/c\/en\/scientifique","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/scientifique&rel=\/r\/HasPrerequisite&other=\/c\/en\/lawyer","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/lawyer&rel=\/r\/IsA&other=\/c\/en\/avocat","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/avocat&rel=\/r\/PartOf&other=\/c\/en\/journalist","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/journalist&rel=\/r\/HasA&other=\/c\/en\/journaliste","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/journaliste&rel=\/r\/UsedFor&other=\/c\/en\/chef","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/chef&rel=\/r\/CapableOf&other=\/c\/en\/chef","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/chef&rel=\/r\/AtLocation&other=\/c\/en\/actor","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/actor&rel=\/r\/Requires&other=\/c\/en\/acteur","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/acteur&rel=\/r\/Desires&other=\/c\/en\/musician","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/musician&rel=\/r\/CreatedBy&other=\/c\/en\/musicien","edges":[],"version":"5.8.1"},{"@context":["http:\/\/api.conceptnet.io\/ld\/conceptnet5.7\/context.ld.json"],"@id":"\/query?node=\/c\/en\/musicien&rel=\/r\/HasPrerequisite&other=\/c\/en\/writer","edges":[],"version":"5.8.1"}]
+[
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/fruit\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "fruit"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/apple\/,\/c\/en\/red\/]",
+        "start": "apple",
+        "relation": "HasProperty",
+        "end": "red"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/red\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "red"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/apple\/,\/c\/en\/green\/]",
+        "start": "apple",
+        "relation": "HasProperty",
+        "end": "green"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/apple\/,\/c\/en\/apple_tree\/]",
+        "start": "an apple",
+        "relation": "AtLocation",
+        "end": "apple tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/apple\/,\/c\/en\/fall_from_tree\/]",
+        "start": "an apple",
+        "relation": "CapableOf",
+        "end": "fall from a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/apple\/,\/c\/en\/eating\/]",
+        "start": "apple",
+        "relation": "UsedFor",
+        "end": "eating"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/apple\/,\/c\/en\/core\/]",
+        "start": "An apple",
+        "relation": "HasA",
+        "end": "a core"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/red_fruit\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "red fruit"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/green\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "green"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/core\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "core"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/eve\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "eve"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/tree\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/computer\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "computer"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/round\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "round"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/apple\/,\/c\/en\/grocery_store\/]",
+        "start": "an apple",
+        "relation": "AtLocation",
+        "end": "a grocery store"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/mac\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "mac"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/adam\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "adam"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/pie\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "pie"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/dog\/,\/c\/en\/bark\/]",
+        "start": "dog",
+        "relation": "CapableOf",
+        "end": "bark"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/dog\/,\/c\/en\/guard_house\/]",
+        "start": "A dog",
+        "relation": "CapableOf",
+        "end": "guard your house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/dog\/,\/c\/en\/pet\/]",
+        "start": "dog",
+        "relation": "RelatedTo",
+        "end": "pet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/dog\/,\/c\/en\/animal\/]",
+        "start": "dog",
+        "relation": "RelatedTo",
+        "end": "animal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/dog\/,\/c\/en\/kennel\/]",
+        "start": "a dog",
+        "relation": "AtLocation",
+        "end": "a kennel"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flea\/,\/c\/en\/dog\/]",
+        "start": "flea",
+        "relation": "RelatedTo",
+        "end": "dog"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/dog\/,\/c\/en\/canine\/]",
+        "start": "dog",
+        "relation": "RelatedTo",
+        "end": "canine"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/dog\/,\/c\/en\/pet\/]",
+        "start": "A dog",
+        "relation": "CapableOf",
+        "end": "be a pet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/dog\/,\/c\/en\/loyal_friend\/]",
+        "start": "A dog",
+        "relation": "IsA",
+        "end": "a loyal friend"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/dog\/,\/c\/en\/companionship\/]",
+        "start": "a dog",
+        "relation": "UsedFor",
+        "end": "companionship"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/dog\/,\/c\/en\/run\/]",
+        "start": "a dog",
+        "relation": "CapableOf",
+        "end": "run"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/dog\/,\/c\/en\/pet\/]",
+        "start": "a dog",
+        "relation": "IsA",
+        "end": "pet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/dog\/,\/c\/en\/table\/]",
+        "start": "the dog",
+        "relation": "AtLocation",
+        "end": "the table"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/dog\/,\/c\/en\/guide_blind_person\/]",
+        "start": "A dog",
+        "relation": "CapableOf",
+        "end": "guide a blind person"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/dog\/,\/c\/en\/mammal\/]",
+        "start": "a dog",
+        "relation": "IsA",
+        "end": "mammal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/dog\/,\/c\/en\/four_legs\/]",
+        "start": "A dog",
+        "relation": "HasA",
+        "end": "four legs"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/spaniel\/,\/c\/en\/dog\/]",
+        "start": "a spaniel",
+        "relation": "IsA",
+        "end": "dog"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/poodle\/,\/c\/en\/dog\/]",
+        "start": "A poodle",
+        "relation": "IsA",
+        "end": "dog"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/rain\/,\/c\/en\/water\/]",
+        "start": "rain",
+        "relation": "IsA",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/drop\/,\/c\/en\/rain\/]",
+        "start": "drop",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/water\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/weather\/,\/c\/en\/rain\/]",
+        "start": "weather",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/rain\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/precipitation\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "precipitation"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/rain\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/Causes\/,\/c\/en\/rain\/,\/c\/en\/flooding\/]",
+        "start": "rain",
+        "relation": "Causes",
+        "end": "flooding"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mist\/,\/c\/en\/rain\/]",
+        "start": "mist",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/weather\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "weather"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/rain\/,\/c\/en\/wet\/]",
+        "start": "rain",
+        "relation": "HasProperty",
+        "end": "wet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/wet\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "wet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/sky\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/falling\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "falling"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/drops\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "drops"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/thunder\/,\/c\/en\/rain\/]",
+        "start": "thunder",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/rain\/,\/c\/en\/wet_ground\/]",
+        "start": "Rain",
+        "relation": "CapableOf",
+        "end": "wet the ground"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/water\/,\/c\/en\/rain\/]",
+        "start": "water",
+        "relation": "AtLocation",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rain\/,\/c\/en\/clouds\/]",
+        "start": "rain",
+        "relation": "RelatedTo",
+        "end": "clouds"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/page\/,\/c\/en\/book\/]",
+        "start": "page",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/reading\/,\/c\/en\/book\/]",
+        "start": "reading",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/book\/,\/c\/en\/learning\/]",
+        "start": "a book",
+        "relation": "UsedFor",
+        "end": "learning"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/dictionary\/,\/c\/en\/book\/]",
+        "start": "dictionary",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/book\/,\/c\/en\/library\/]",
+        "start": "a book",
+        "relation": "PartOf",
+        "end": "library"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/book\/,\/c\/en\/pages\/]",
+        "start": "book",
+        "relation": "RelatedTo",
+        "end": "pages"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/book\/,\/c\/en\/classroom\/]",
+        "start": "a book",
+        "relation": "AtLocation",
+        "end": "a classroom"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/book\/,\/c\/en\/reading\/]",
+        "start": "book",
+        "relation": "RelatedTo",
+        "end": "reading"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/story\/,\/c\/en\/book\/]",
+        "start": "story",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/chapter\/,\/c\/en\/book\/]",
+        "start": "A chapter",
+        "relation": "PartOf",
+        "end": "a book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/bible\/,\/c\/en\/book\/]",
+        "start": "the bible",
+        "relation": "IsA",
+        "end": "a book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/book\/,\/c\/en\/shelf\/]",
+        "start": "a book",
+        "relation": "AtLocation",
+        "end": "the shelf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/library\/,\/c\/en\/book\/]",
+        "start": "library",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/book\/,\/c\/en\/bookshelf\/]",
+        "start": "a book",
+        "relation": "AtLocation",
+        "end": "a bookshelf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cover\/,\/c\/en\/book\/]",
+        "start": "cover",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/book\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/book\/,\/c\/en\/knowledge\/]",
+        "start": "a book",
+        "relation": "HasA",
+        "end": "knowledge"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/read\/,\/c\/en\/book\/]",
+        "start": "read",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/branch\/,\/c\/en\/tree\/]",
+        "start": "branch",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/squirrel\/,\/c\/en\/tree\/]",
+        "start": "squirrel",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wood\/,\/c\/en\/tree\/]",
+        "start": "wood",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/tree\/,\/c\/en\/plant\/]",
+        "start": "tree",
+        "relation": "RelatedTo",
+        "end": "plant"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/nest\/,\/c\/en\/tree\/]",
+        "start": "nest",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/shade\/,\/c\/en\/tree\/]",
+        "start": "shade",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/tree\/,\/c\/en\/grow\/]",
+        "start": "a tree",
+        "relation": "CapableOf",
+        "end": "grow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leaf\/,\/c\/en\/tree\/]",
+        "start": "leaf",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/leaf\/,\/c\/en\/tree\/]",
+        "start": "A leaf",
+        "relation": "PartOf",
+        "end": "a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/tree\/,\/c\/en\/leaves\/]",
+        "start": "tree",
+        "relation": "RelatedTo",
+        "end": "leaves"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/bark\/,\/c\/en\/tree\/]",
+        "start": "bark",
+        "relation": "PartOf",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/stick\/,\/c\/en\/tree\/]",
+        "start": "stick",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/tree\/,\/c\/en\/branches\/]",
+        "start": "tree",
+        "relation": "RelatedTo",
+        "end": "branches"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/tree\/,\/c\/en\/grow_leaves\/]",
+        "start": "A tree",
+        "relation": "CapableOf",
+        "end": "grow leaves"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/tree\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/tree\/,\/c\/en\/forest\/]",
+        "start": "A tree",
+        "relation": "PartOf",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/tree\/,\/c\/en\/shade_lawn\/]",
+        "start": "A tree",
+        "relation": "CapableOf",
+        "end": "shade the lawn"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bird\/,\/c\/en\/tree\/]",
+        "start": "a bird",
+        "relation": "AtLocation",
+        "end": "a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/leaf\/,\/c\/en\/tree\/]",
+        "start": "a leaf",
+        "relation": "AtLocation",
+        "end": "a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/apple\/,\/c\/en\/tree\/]",
+        "start": "apple",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/drive\/,\/c\/en\/car\/]",
+        "start": "drive",
+        "relation": "RelatedTo",
+        "end": "car"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/car\/,\/c\/en\/city\/]",
+        "start": "a car",
+        "relation": "AtLocation",
+        "end": "the city"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/car\/,\/c\/en\/parking_lot\/]",
+        "start": "a car",
+        "relation": "AtLocation",
+        "end": "a parking lot"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/car\/,\/c\/en\/vehicle\/]",
+        "start": "car",
+        "relation": "RelatedTo",
+        "end": "vehicle"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/car\/,\/c\/en\/seats\/]",
+        "start": "a car",
+        "relation": "HasA",
+        "end": "seats"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/car\/,\/c\/en\/go_fast\/]",
+        "start": "A car",
+        "relation": "CapableOf",
+        "end": "go fast"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/car\/,\/c\/en\/crash\/]",
+        "start": "a car",
+        "relation": "CapableOf",
+        "end": "crash"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/car\/,\/c\/en\/repair_shop\/]",
+        "start": "a car",
+        "relation": "AtLocation",
+        "end": "the repair shop"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/car\/,\/c\/en\/roll_over\/]",
+        "start": "A car",
+        "relation": "CapableOf",
+        "end": "roll over"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/motor\/,\/c\/en\/car\/]",
+        "start": "motor",
+        "relation": "RelatedTo",
+        "end": "car"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/car\/,\/c\/en\/automobile\/]",
+        "start": "car",
+        "relation": "RelatedTo",
+        "end": "automobile"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/car\/,\/c\/en\/slow_down\/]",
+        "start": "a car",
+        "relation": "CapableOf",
+        "end": "slow down"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/volvo\/,\/c\/en\/car\/]",
+        "start": "A volvo",
+        "relation": "IsA",
+        "end": "car"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/tire\/,\/c\/en\/car\/]",
+        "start": "A tire",
+        "relation": "PartOf",
+        "end": "a car"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/car\/,\/c\/en\/road\/]",
+        "start": "a car",
+        "relation": "AtLocation",
+        "end": "the road"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/stereo\/,\/c\/en\/car\/]",
+        "start": "stereo",
+        "relation": "AtLocation",
+        "end": "a car"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/car\/,\/c\/en\/freeway\/]",
+        "start": "car",
+        "relation": "AtLocation",
+        "end": "a freeway"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/car\/,\/c\/en\/red\/]",
+        "start": "my car",
+        "relation": "HasProperty",
+        "end": "red"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/shade\/,\/c\/en\/sun\/]",
+        "start": "shade",
+        "relation": "RelatedTo",
+        "end": "sun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/dry_laundry\/]",
+        "start": "The sun",
+        "relation": "CapableOf",
+        "end": "dry your laundry"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sun\/,\/c\/en\/star\/]",
+        "start": "sun",
+        "relation": "RelatedTo",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/shine_brightly\/]",
+        "start": "sun",
+        "relation": "CapableOf",
+        "end": "shine brightly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/shine_on_day\/]",
+        "start": "The sun",
+        "relation": "CapableOf",
+        "end": "shine on your day"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/heat_earth\/]",
+        "start": "The sun",
+        "relation": "CapableOf",
+        "end": "heat the earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/weather\/,\/c\/en\/sun\/]",
+        "start": "weather",
+        "relation": "RelatedTo",
+        "end": "sun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/sun\/,\/c\/en\/center_of_solar_system\/]",
+        "start": "the sun",
+        "relation": "AtLocation",
+        "end": "the center of the solar system"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/sun\/,\/c\/en\/universe\/]",
+        "start": "the sun",
+        "relation": "AtLocation",
+        "end": "the universe"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/shine_bright\/]",
+        "start": "The sun",
+        "relation": "CapableOf",
+        "end": "shine bright"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/rise_in_morning\/]",
+        "start": "the sun",
+        "relation": "CapableOf",
+        "end": "rise in the morning"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/sun\/,\/c\/en\/light\/]",
+        "start": "the sun",
+        "relation": "UsedFor",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/brown_skin\/]",
+        "start": "the sun",
+        "relation": "CapableOf",
+        "end": "brown skin"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sun\/,\/c\/en\/light\/]",
+        "start": "sun",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sun\/,\/c\/en\/solar\/]",
+        "start": "sun",
+        "relation": "RelatedTo",
+        "end": "solar"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rise\/,\/c\/en\/sun\/]",
+        "start": "rise",
+        "relation": "RelatedTo",
+        "end": "sun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/sun\/,\/c\/en\/burn_skin\/]",
+        "start": "the sun",
+        "relation": "CapableOf",
+        "end": "burn your skin"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/sun\/,\/c\/en\/solar_system\/]",
+        "start": "the sun",
+        "relation": "AtLocation",
+        "end": "the solar system"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/star\/,\/c\/en\/sun\/]",
+        "start": "a star",
+        "relation": "IsA",
+        "end": "a sun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/morning\/,\/c\/en\/sun\/]",
+        "start": "morning",
+        "relation": "RelatedTo",
+        "end": "sun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/moon\/,\/c\/en\/space\/]",
+        "start": "the moon",
+        "relation": "AtLocation",
+        "end": "space"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/rocks\/,\/c\/en\/moon\/]",
+        "start": "rocks",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/crater\/,\/c\/en\/moon\/]",
+        "start": "a crater",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/american_flag\/,\/c\/en\/moon\/]",
+        "start": "an American flag",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/moon\/,\/c\/en\/earth\/]",
+        "start": "moon",
+        "relation": "RelatedTo",
+        "end": "earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/moon\/,\/c\/en\/orbit_around_earth\/]",
+        "start": "the Moon",
+        "relation": "AtLocation",
+        "end": "orbit around the earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/moon\/,\/c\/en\/satellite\/]",
+        "start": "moon",
+        "relation": "RelatedTo",
+        "end": "satellite"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/moon\/,\/c\/en\/place\/]",
+        "start": "the moon",
+        "relation": "IsA",
+        "end": "a place"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/moon\/,\/c\/en\/sphere\/]",
+        "start": "the moon",
+        "relation": "IsA",
+        "end": "a sphere"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/footprint\/,\/c\/en\/moon\/]",
+        "start": "a footprint",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/moon_rock\/,\/c\/en\/moon\/]",
+        "start": "a moon rock",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/moon_dust\/,\/c\/en\/moon\/]",
+        "start": "moon dust",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/moon\/,\/c\/en\/night_sky\/]",
+        "start": "the Moon",
+        "relation": "AtLocation",
+        "end": "the night sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/moon\/,\/c\/en\/keep_track_of_time\/]",
+        "start": "the Moon",
+        "relation": "UsedFor",
+        "end": "keep track of time"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/dust\/,\/c\/en\/moon\/]",
+        "start": "dust",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/moon\/,\/c\/en\/night\/]",
+        "start": "moon",
+        "relation": "RelatedTo",
+        "end": "night"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/moon\/,\/c\/en\/lunar\/]",
+        "start": "moon",
+        "relation": "RelatedTo",
+        "end": "lunar"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/low_gravity\/,\/c\/en\/moon\/]",
+        "start": "low gravity",
+        "relation": "AtLocation",
+        "end": "the moon"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/moon\/,\/c\/en\/body\/]",
+        "start": "moon",
+        "relation": "RelatedTo",
+        "end": "body"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/star\/,\/c\/en\/space\/]",
+        "start": "a star",
+        "relation": "AtLocation",
+        "end": "space"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/star\/,\/c\/en\/night_sky\/]",
+        "start": "a star",
+        "relation": "AtLocation",
+        "end": "the night sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sun\/,\/c\/en\/star\/]",
+        "start": "sun",
+        "relation": "RelatedTo",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/star\/,\/c\/en\/sky\/]",
+        "start": "a star",
+        "relation": "AtLocation",
+        "end": "the sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/star\/,\/c\/en\/galaxy\/]",
+        "start": "a star",
+        "relation": "AtLocation",
+        "end": "a galaxy"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/star\/,\/c\/en\/outerspace\/]",
+        "start": "a star",
+        "relation": "AtLocation",
+        "end": "outerspace"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/star\/,\/c\/en\/sun\/]",
+        "start": "a star",
+        "relation": "IsA",
+        "end": "a sun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/star\/,\/c\/en\/outer_space\/]",
+        "start": "a star",
+        "relation": "AtLocation",
+        "end": "outer space"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/red_dwarf\/n\/wn\/object\/,\/c\/en\/star\/n\/wn\/astronomy\/]",
+        "start": "red dwarf",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lodestar\/n\/wn\/object\/,\/c\/en\/star\/n\/wn\/astronomy\/]",
+        "start": "lodestar",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/neutron_star\/n\/wn\/object\/,\/c\/en\/star\/n\/wn\/astronomy\/]",
+        "start": "neutron star",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/hexagram\/n\/wn\/shape\/,\/c\/en\/star\/n\/wn\/shape\/]",
+        "start": "hexagram",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/variable_star\/n\/wn\/object\/,\/c\/en\/star\/n\/wn\/astronomy\/]",
+        "start": "variable star",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/supernova\/n\/wn\/object\/,\/c\/en\/star\/n\/wn\/astronomy\/]",
+        "start": "supernova",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/asterism\/n\/wn\/mineralogy\/,\/c\/en\/star\/n\/wn\/shape\/]",
+        "start": "asterism",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/starlet\/n\/wn\/object\/,\/c\/en\/star\/n\/wn\/object\/]",
+        "start": "starlet",
+        "relation": "IsA",
+        "end": "star"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/shark\/,\/c\/en\/ocean\/]",
+        "start": "a shark",
+        "relation": "AtLocation",
+        "end": "any ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wave\/,\/c\/en\/ocean\/]",
+        "start": "wave",
+        "relation": "RelatedTo",
+        "end": "ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sea\/,\/c\/en\/ocean\/]",
+        "start": "sea",
+        "relation": "RelatedTo",
+        "end": "ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/ocean\/]",
+        "start": "a fish",
+        "relation": "AtLocation",
+        "end": "the ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/ocean\/,\/c\/en\/sailing\/]",
+        "start": "the ocean",
+        "relation": "UsedFor",
+        "end": "sailing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/ocean\/,\/c\/en\/sea\/]",
+        "start": "ocean",
+        "relation": "RelatedTo",
+        "end": "sea"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/coast\/,\/c\/en\/ocean\/]",
+        "start": "coast",
+        "relation": "RelatedTo",
+        "end": "ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/ocean\/,\/c\/en\/water\/]",
+        "start": "ocean",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/ocean\/,\/c\/en\/earth\/]",
+        "start": "an ocean",
+        "relation": "AtLocation",
+        "end": "the earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/salt\/,\/c\/en\/ocean\/]",
+        "start": "salt",
+        "relation": "AtLocation",
+        "end": "ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/water\/,\/c\/en\/ocean\/]",
+        "start": "water",
+        "relation": "AtLocation",
+        "end": "the ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fish\/,\/c\/en\/ocean\/]",
+        "start": "fish",
+        "relation": "RelatedTo",
+        "end": "ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/blue\/,\/c\/en\/ocean\/]",
+        "start": "blue",
+        "relation": "RelatedTo",
+        "end": "ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/lobster\/,\/c\/en\/ocean\/]",
+        "start": "lobster",
+        "relation": "AtLocation",
+        "end": "the ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/ocean\/,\/c\/en\/body_of_water\/]",
+        "start": "an ocean",
+        "relation": "IsA",
+        "end": "a body of water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/wave\/,\/c\/en\/ocean\/]",
+        "start": "A wave",
+        "relation": "PartOf",
+        "end": "an ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/whales\/,\/c\/en\/ocean\/]",
+        "start": "whales",
+        "relation": "AtLocation",
+        "end": "the ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/salt_water\/,\/c\/en\/ocean\/]",
+        "start": "salt water",
+        "relation": "AtLocation",
+        "end": "the ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/boat\/,\/c\/en\/ocean\/]",
+        "start": "a boat",
+        "relation": "AtLocation",
+        "end": "the ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/ocean\/,\/c\/en\/swim_in\/]",
+        "start": "the ocean",
+        "relation": "UsedFor",
+        "end": "swim in"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/hill\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "hill"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/hill\/,\/c\/en\/mountain\/]",
+        "start": "hill",
+        "relation": "RelatedTo",
+        "end": "mountain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/climb\/,\/c\/en\/mountain\/]",
+        "start": "climb",
+        "relation": "RelatedTo",
+        "end": "mountain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/big\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "big"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/slope\/,\/c\/en\/mountain\/]",
+        "start": "slope",
+        "relation": "RelatedTo",
+        "end": "mountain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/rock\/,\/c\/en\/mountain\/]",
+        "start": "a rock",
+        "relation": "AtLocation",
+        "end": "a mountain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/mountain\/,\/c\/en\/climbing\/]",
+        "start": "a mountain",
+        "relation": "UsedFor",
+        "end": "climbing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/big_hill\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "big hill"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/large\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "large"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/peak\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "peak"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/high\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "high"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/rock\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "rock"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/tall\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "tall"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/large_hill\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "large hill"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/land\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "land"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/mountain\/,\/c\/en\/very_large\/]",
+        "start": "A mountain",
+        "relation": "HasProperty",
+        "end": "very large"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mountain\/,\/c\/en\/surface_of_earth\/]",
+        "start": "a mountain",
+        "relation": "AtLocation",
+        "end": "the surface of the earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mountain\/,\/c\/en\/canada\/]",
+        "start": "a mountain",
+        "relation": "AtLocation",
+        "end": "Canada"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/everest\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "everest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/snow\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "snow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/water\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/stream\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "stream"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/water\/,\/c\/en\/river\/]",
+        "start": "water",
+        "relation": "AtLocation",
+        "end": "river"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/flowing\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "flowing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/river\/,\/c\/en\/bridge\/]",
+        "start": "river",
+        "relation": "AtLocation",
+        "end": "a bridge"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/river\/]",
+        "start": "a fish",
+        "relation": "AtLocation",
+        "end": "a river"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/big\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "big"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flow\/,\/c\/en\/river\/]",
+        "start": "flow",
+        "relation": "RelatedTo",
+        "end": "river"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/bridge\/,\/c\/en\/river\/]",
+        "start": "bridge",
+        "relation": "RelatedTo",
+        "end": "river"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/river\/,\/c\/en\/fishing\/]",
+        "start": "a river",
+        "relation": "UsedFor",
+        "end": "fishing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/river\/,\/c\/en\/swimming\/]",
+        "start": "a river",
+        "relation": "UsedFor",
+        "end": "swimming"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/river\/,\/c\/en\/valley\/]",
+        "start": "a river",
+        "relation": "AtLocation",
+        "end": "a valley"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/mississippi\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "mississippi"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/flowing_water\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "flowing water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/canal\/,\/c\/en\/river\/]",
+        "start": "canal",
+        "relation": "RelatedTo",
+        "end": "river"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/nile\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "nile"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/creek\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "creek"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/large\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "large"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/body\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "body"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/river\/,\/c\/en\/waterfall\/]",
+        "start": "river",
+        "relation": "AtLocation",
+        "end": "a waterfall"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flower\/,\/c\/en\/plant\/]",
+        "start": "flower",
+        "relation": "RelatedTo",
+        "end": "plant"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/hibiscus\/,\/c\/en\/flower\/]",
+        "start": "A hibiscus",
+        "relation": "IsA",
+        "end": "a flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/iris\/,\/c\/en\/flower\/]",
+        "start": "An iris",
+        "relation": "IsA",
+        "end": "flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flower\/,\/c\/en\/pretty\/]",
+        "start": "flower",
+        "relation": "RelatedTo",
+        "end": "pretty"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flower\/,\/c\/en\/rose\/]",
+        "start": "flower",
+        "relation": "RelatedTo",
+        "end": "rose"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/plant\/,\/c\/en\/flower\/]",
+        "start": "plant",
+        "relation": "RelatedTo",
+        "end": "flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flower\/,\/c\/en\/petals\/]",
+        "start": "flower",
+        "relation": "RelatedTo",
+        "end": "petals"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lily\/,\/c\/en\/flower\/]",
+        "start": "A lily",
+        "relation": "IsA",
+        "end": "a flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/carnation\/,\/c\/en\/flower\/]",
+        "start": "a carnation",
+        "relation": "IsA",
+        "end": "a flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/garden\/,\/c\/en\/flower\/]",
+        "start": "garden",
+        "relation": "RelatedTo",
+        "end": "flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/flower\/,\/c\/en\/vase\/]",
+        "start": "a flower",
+        "relation": "AtLocation",
+        "end": "a vase"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/violet\/,\/c\/en\/flower\/]",
+        "start": "A violet",
+        "relation": "IsA",
+        "end": "a flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/petal\/,\/c\/en\/flower\/]",
+        "start": "petal",
+        "relation": "RelatedTo",
+        "end": "flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flower\/,\/c\/en\/bloom\/]",
+        "start": "flower",
+        "relation": "RelatedTo",
+        "end": "bloom"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flower\/,\/c\/en\/blossom\/]",
+        "start": "flower",
+        "relation": "RelatedTo",
+        "end": "blossom"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/lily\/,\/c\/en\/flower\/]",
+        "start": "lily",
+        "relation": "RelatedTo",
+        "end": "flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/flower\/,\/c\/en\/part_of_plant\/]",
+        "start": "a flower",
+        "relation": "IsA",
+        "end": "a part of a plant"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/flower\/,\/c\/en\/park\/]",
+        "start": "a flower",
+        "relation": "AtLocation",
+        "end": "the park"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/dandelion\/,\/c\/en\/flower\/]",
+        "start": "a dandelion",
+        "relation": "IsA",
+        "end": "a flower"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flower\/,\/c\/en\/daisy\/]",
+        "start": "flower",
+        "relation": "RelatedTo",
+        "end": "daisy"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/nest\/,\/c\/en\/bird\/]",
+        "start": "nest",
+        "relation": "RelatedTo",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chicken\/,\/c\/en\/bird\/]",
+        "start": "chicken",
+        "relation": "RelatedTo",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/bird\/,\/c\/en\/animal\/]",
+        "start": "bird",
+        "relation": "RelatedTo",
+        "end": "animal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/duck\/,\/c\/en\/bird\/]",
+        "start": "duck",
+        "relation": "RelatedTo",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chick\/,\/c\/en\/bird\/]",
+        "start": "chick",
+        "relation": "RelatedTo",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/canary\/,\/c\/en\/bird\/]",
+        "start": "canary",
+        "relation": "RelatedTo",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/bird\/,\/c\/en\/flying\/]",
+        "start": "bird",
+        "relation": "RelatedTo",
+        "end": "flying"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/finch\/,\/c\/en\/bird\/]",
+        "start": "A finch",
+        "relation": "IsA",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/bird\/,\/c\/en\/sing\/]",
+        "start": "a bird",
+        "relation": "CapableOf",
+        "end": "sing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/robin\/,\/c\/en\/bird\/]",
+        "start": "A robin",
+        "relation": "IsA",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/ostrich\/,\/c\/en\/bird\/]",
+        "start": "An ostrich",
+        "relation": "IsA",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/parakeet\/,\/c\/en\/bird\/]",
+        "start": "A parakeet",
+        "relation": "IsA",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/swan\/,\/c\/en\/bird\/]",
+        "start": "a swan",
+        "relation": "IsA",
+        "end": "a bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/feather\/,\/c\/en\/bird\/]",
+        "start": "a feather",
+        "relation": "AtLocation",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/bird\/,\/c\/en\/wings\/]",
+        "start": "bird",
+        "relation": "RelatedTo",
+        "end": "wings"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/egg\/,\/c\/en\/bird\/]",
+        "start": "egg",
+        "relation": "RelatedTo",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/pheasant\/,\/c\/en\/bird\/]",
+        "start": "A pheasant",
+        "relation": "IsA",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/crow\/,\/c\/en\/bird\/]",
+        "start": "crow",
+        "relation": "IsA",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bird\/,\/c\/en\/tree\/]",
+        "start": "a bird",
+        "relation": "AtLocation",
+        "end": "a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/owl\/,\/c\/en\/bird\/]",
+        "start": "owl",
+        "relation": "RelatedTo",
+        "end": "bird"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cat\/,\/c\/en\/lap\/]",
+        "start": "a cat",
+        "relation": "AtLocation",
+        "end": "my lap"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cat\/,\/c\/en\/bed\/]",
+        "start": "a cat",
+        "relation": "AtLocation",
+        "end": "a bed"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cat\/,\/c\/en\/hunt_mice\/]",
+        "start": "Cat",
+        "relation": "CapableOf",
+        "end": "hunt mice"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cat\/,\/c\/en\/windowsill\/]",
+        "start": "a cat",
+        "relation": "AtLocation",
+        "end": "the windowsill"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/cat\/,\/c\/en\/four_legs\/]",
+        "start": "A cat",
+        "relation": "HasA",
+        "end": "four legs"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cat\/,\/c\/en\/drink_water\/]",
+        "start": "a cat",
+        "relation": "CapableOf",
+        "end": "drink water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cat\/,\/c\/en\/catch_mouse\/]",
+        "start": "a cat",
+        "relation": "CapableOf",
+        "end": "catch a mouse"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cat\/,\/c\/en\/feline\/]",
+        "start": "cat",
+        "relation": "RelatedTo",
+        "end": "feline"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cat\/,\/c\/en\/animal\/]",
+        "start": "cat",
+        "relation": "RelatedTo",
+        "end": "animal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cat\/,\/c\/en\/climb_up_tree\/]",
+        "start": "A cat",
+        "relation": "CapableOf",
+        "end": "climb up a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cat\/,\/c\/en\/pet\/]",
+        "start": "cat",
+        "relation": "RelatedTo",
+        "end": "pet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cat\/,\/c\/en\/corner_mouse\/]",
+        "start": "A cat",
+        "relation": "CapableOf",
+        "end": "corner a mouse"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/kitten\/,\/c\/en\/cat\/]",
+        "start": "kitten",
+        "relation": "RelatedTo",
+        "end": "cat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cat\/,\/c\/en\/vet\/]",
+        "start": "a cat",
+        "relation": "AtLocation",
+        "end": "a vet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cat\/,\/c\/en\/look_at_king\/]",
+        "start": "a cat",
+        "relation": "CapableOf",
+        "end": "look at a king"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cat\/,\/c\/en\/chair\/]",
+        "start": "a cat",
+        "relation": "AtLocation",
+        "end": "a chair"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cat\/,\/c\/en\/table\/]",
+        "start": "a cat",
+        "relation": "AtLocation",
+        "end": "a table"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/cat\/,\/c\/en\/feline\/]",
+        "start": "A cat",
+        "relation": "HasProperty",
+        "end": "a feline"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/water\/]",
+        "start": "a fish",
+        "relation": "AtLocation",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fish\/,\/c\/en\/animal\/]",
+        "start": "fish",
+        "relation": "RelatedTo",
+        "end": "animal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/bass\/,\/c\/en\/fish\/]",
+        "start": "A bass",
+        "relation": "IsA",
+        "end": "fish"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/trout\/,\/c\/en\/fish\/]",
+        "start": "trout",
+        "relation": "IsA",
+        "end": "a fish"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fish\/,\/c\/en\/water\/]",
+        "start": "fish",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/ocean\/]",
+        "start": "a fish",
+        "relation": "AtLocation",
+        "end": "the ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fish\/,\/c\/en\/sea\/]",
+        "start": "fish",
+        "relation": "RelatedTo",
+        "end": "sea"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/aquarium\/]",
+        "start": "fish",
+        "relation": "AtLocation",
+        "end": "an aquarium"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/crappie\/,\/c\/en\/fish\/]",
+        "start": "A crappie",
+        "relation": "IsA",
+        "end": "fish"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fish\/,\/c\/en\/creature\/]",
+        "start": "fish",
+        "relation": "RelatedTo",
+        "end": "creature"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/river\/]",
+        "start": "a fish",
+        "relation": "AtLocation",
+        "end": "a river"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/pike\/,\/c\/en\/fish\/]",
+        "start": "A pike",
+        "relation": "IsA",
+        "end": "fish"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/lake\/]",
+        "start": "a fish",
+        "relation": "AtLocation",
+        "end": "a lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/fish\/,\/c\/en\/animal\/]",
+        "start": "a fish",
+        "relation": "IsA",
+        "end": "an animal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fish\/,\/c\/en\/ocean\/]",
+        "start": "fish",
+        "relation": "RelatedTo",
+        "end": "ocean"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fish\/,\/c\/en\/swimming\/]",
+        "start": "fish",
+        "relation": "RelatedTo",
+        "end": "swimming"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/find_underwater\/,\/c\/en\/fish\/]",
+        "start": "Something you find underwater",
+        "relation": "IsA",
+        "end": "fish"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fish\/,\/c\/en\/live_underwater\/]",
+        "start": "a fish",
+        "relation": "CapableOf",
+        "end": "live underwater"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/butterfly\/,\/c\/en\/insect\/]",
+        "start": "A butterfly",
+        "relation": "IsA",
+        "end": "an insect"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/moth\/,\/c\/en\/butterfly\/]",
+        "start": "moth",
+        "relation": "RelatedTo",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/butterfly\/n\/wn\/act\/,\/c\/en\/swimming_stroke\/n\/wn\/act\/]",
+        "start": "butterfly",
+        "relation": "IsA",
+        "end": "swimming stroke"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/nymphalid\/n\/wn\/animal\/,\/c\/en\/butterfly\/n\/wn\/animal\/]",
+        "start": "nymphalid",
+        "relation": "IsA",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/pierid\/n\/wn\/animal\/,\/c\/en\/butterfly\/n\/wn\/animal\/]",
+        "start": "pierid",
+        "relation": "IsA",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/sulphur_butterfly\/n\/wn\/animal\/,\/c\/en\/butterfly\/n\/wn\/animal\/]",
+        "start": "sulphur butterfly",
+        "relation": "IsA",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/butterfly\/n\/wn\/animal\/,\/c\/en\/lepidopterous_insect\/n\/wn\/animal\/]",
+        "start": "butterfly",
+        "relation": "IsA",
+        "end": "lepidopterous insect"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/dolphin_kick\/n\/wn\/act\/,\/c\/en\/butterfly\/n\/wn\/act\/]",
+        "start": "dolphin kick",
+        "relation": "PartOf",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/Causes\/,\/c\/en\/caterpillar_turning_into_cocoon\/,\/c\/en\/butterfly\/]",
+        "start": "a caterpillar turning into a cocoon",
+        "relation": "Causes",
+        "end": "a butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/butterfly\/,\/c\/en\/fly\/]",
+        "start": "a butterfly",
+        "relation": "CapableOf",
+        "end": "fly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/ringlet\/n\/wn\/animal\/,\/c\/en\/butterfly\/n\/wn\/animal\/]",
+        "start": "ringlet",
+        "relation": "IsA",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lycaenid\/n\/wn\/animal\/,\/c\/en\/butterfly\/n\/wn\/animal\/]",
+        "start": "lycaenid",
+        "relation": "IsA",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/danaid\/n\/wn\/animal\/,\/c\/en\/butterfly\/n\/wn\/animal\/]",
+        "start": "danaid",
+        "relation": "IsA",
+        "end": "butterfly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/butterfly\/,\/c\/en\/moth\/]",
+        "start": "butterfly",
+        "relation": "RelatedTo",
+        "end": "moth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leaf\/,\/c\/en\/tree\/]",
+        "start": "leaf",
+        "relation": "RelatedTo",
+        "end": "tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/leaf\/,\/c\/en\/tree\/]",
+        "start": "A leaf",
+        "relation": "PartOf",
+        "end": "a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/leaf\/,\/c\/en\/tree\/]",
+        "start": "a leaf",
+        "relation": "AtLocation",
+        "end": "a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leaf\/,\/c\/en\/green\/]",
+        "start": "leaf",
+        "relation": "RelatedTo",
+        "end": "green"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/leaf\/,\/c\/en\/trees\/]",
+        "start": "a leaf",
+        "relation": "AtLocation",
+        "end": "trees"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leaf\/,\/c\/en\/part\/]",
+        "start": "leaf",
+        "relation": "RelatedTo",
+        "end": "part"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/leaf\/,\/c\/en\/fall_from_tree\/]",
+        "start": "A leaf",
+        "relation": "CapableOf",
+        "end": "fall from a tree"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/page\/,\/c\/en\/leaf\/]",
+        "start": "page",
+        "relation": "RelatedTo",
+        "end": "leaf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leaf\/,\/c\/en\/plant\/]",
+        "start": "leaf",
+        "relation": "RelatedTo",
+        "end": "plant"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/leaf\/,\/c\/en\/photosynthesis\/]",
+        "start": "a leaf",
+        "relation": "UsedFor",
+        "end": "photosynthesis"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leaf\/,\/c\/en\/trees\/]",
+        "start": "leaf",
+        "relation": "RelatedTo",
+        "end": "trees"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leaf\/,\/c\/en\/foliage\/]",
+        "start": "leaf",
+        "relation": "RelatedTo",
+        "end": "foliage"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/parallel_veined_leaf\/n\/wn\/plant\/,\/c\/en\/leaf\/n\/wn\/plant\/]",
+        "start": "parallel-veined leaf",
+        "relation": "IsA",
+        "end": "leaf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/fig_leaf\/n\/wn\/plant\/,\/c\/en\/leaf\/n\/wn\/plant\/]",
+        "start": "fig leaf",
+        "relation": "IsA",
+        "end": "leaf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/interleaf\/n\/wn\/communication\/,\/c\/en\/leaf\/n\/wn\/communication\/]",
+        "start": "interleaf",
+        "relation": "IsA",
+        "end": "leaf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/leaf\/n\/wn\/communication\/,\/c\/en\/written_communication\/n\/wn\/communication\/]",
+        "start": "leaf",
+        "relation": "PartOf",
+        "end": "written communication"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/flyleaf\/n\/wn\/communication\/,\/c\/en\/leaf\/n\/wn\/communication\/]",
+        "start": "flyleaf",
+        "relation": "IsA",
+        "end": "leaf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/prickly_edged_leaf\/n\/wn\/plant\/,\/c\/en\/leaf\/n\/wn\/plant\/]",
+        "start": "prickly-edged leaf",
+        "relation": "IsA",
+        "end": "leaf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/white\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "white"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/cold\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "cold"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/winter\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "winter"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/precipitation\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "precipitation"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/rain\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/frozen\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "frozen"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/water\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/snow\/,\/c\/en\/mountains\/]",
+        "start": "snow",
+        "relation": "AtLocation",
+        "end": "the mountains"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/flakes\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "flakes"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/ice\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "ice"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/weather\/,\/c\/en\/snow\/]",
+        "start": "weather",
+        "relation": "RelatedTo",
+        "end": "snow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/winter\/,\/c\/en\/snow\/]",
+        "start": "winter",
+        "relation": "RelatedTo",
+        "end": "snow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/weather\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "weather"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/snow\/,\/c\/en\/frozen_water\/]",
+        "start": "Snow",
+        "relation": "IsA",
+        "end": "frozen water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/snow\/,\/c\/en\/canada\/]",
+        "start": "snow",
+        "relation": "AtLocation",
+        "end": "canada"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain\/,\/c\/en\/snow\/]",
+        "start": "mountain",
+        "relation": "RelatedTo",
+        "end": "snow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/snow\/,\/c\/en\/ground\/]",
+        "start": "snow",
+        "relation": "AtLocation",
+        "end": "the ground"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/snow\/,\/c\/en\/roof\/]",
+        "start": "snow",
+        "relation": "AtLocation",
+        "end": "a roof"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/snow\/,\/c\/en\/fluffy\/]",
+        "start": "snow",
+        "relation": "RelatedTo",
+        "end": "fluffy"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/color\/,\/c\/en\/rainbow\/]",
+        "start": "color",
+        "relation": "RelatedTo",
+        "end": "rainbow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/iris\/n\/,\/c\/en\/rainbow\/]",
+        "start": "iris",
+        "relation": "RelatedTo",
+        "end": "rainbow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/rainbow\/n\/wn\/cognition\/,\/c\/en\/promise\/n\/wn\/cognition\/]",
+        "start": "rainbow",
+        "relation": "IsA",
+        "end": "promise"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/rainbow\/n\/wn\/object\/,\/c\/en\/sky\/n\/wn\/object\/]",
+        "start": "rainbow",
+        "relation": "PartOf",
+        "end": "sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/rainbow\/n\/wn\/object\/,\/c\/en\/bow\/n\/wn\/shape\/]",
+        "start": "rainbow",
+        "relation": "IsA",
+        "end": "bow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/blue\/,\/c\/en\/rainbow\/]",
+        "start": "blue",
+        "relation": "RelatedTo",
+        "end": "rainbow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/violet\/,\/c\/en\/rainbow\/]",
+        "start": "violet",
+        "relation": "RelatedTo",
+        "end": "rainbow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/rainbow\/n\/,\/c\/en\/symbolic_representation\/n\/]",
+        "start": "rainbow",
+        "relation": "IsA",
+        "end": "symbolic representation"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/roygbiv\/,\/c\/en\/rainbow\/]",
+        "start": "roygbiv",
+        "relation": "RelatedTo",
+        "end": "rainbow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/rainbow\/,\/c\/en\/sky\/]",
+        "start": "a rainbow",
+        "relation": "AtLocation",
+        "end": "the sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/rainbow\/n\/,\/c\/en\/prismatic\/]",
+        "start": "rainbow",
+        "relation": "RelatedTo",
+        "end": "prismatic"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mountain_spectre\/n\/,\/c\/en\/rainbow\/]",
+        "start": "mountain spectre",
+        "relation": "RelatedTo",
+        "end": "rainbow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/rainbow\/n\/,\/c\/en\/light_wave\/n\/]",
+        "start": "rainbow",
+        "relation": "IsA",
+        "end": "light wave"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/rainbow\/,\/c\/en\/multicolored_light_arc\/]",
+        "start": "A rainbow",
+        "relation": "IsA",
+        "end": "a multicolored light arc"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fogbow\/n\/,\/c\/en\/rainbow\/]",
+        "start": "fogbow",
+        "relation": "RelatedTo",
+        "end": "rainbow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/kitchen\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "kitchen"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/pantry\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "your pantry"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/restaurants\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "Restaurants"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/root_cellar\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a root cellar"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/market\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a market"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/ireland\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "Ireland"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/stew\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "stew"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/restaurant\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a restaurant"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/salad\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a salad"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/potato_bin\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a potato bin"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/bag\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a bag"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/potato_sack\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a potato sack"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/potato_salad\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "potato salad"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/grocery\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a grocery"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/produce_store\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "a produce store"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/store\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "the store"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/potato\/,\/c\/en\/soil\/]",
+        "start": "a potato",
+        "relation": "AtLocation",
+        "end": "soil"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/uruguay_potato\/n\/wn\/food\/,\/c\/en\/potato\/n\/wn\/food\/]",
+        "start": "Uruguay potato",
+        "relation": "IsA",
+        "end": "potato"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/dog\/,\/c\/en\/wolf\/]",
+        "start": "dog",
+        "relation": "RelatedTo",
+        "end": "wolf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/wolf_pup\/n\/wn\/animal\/,\/c\/en\/wolf\/n\/wn\/animal\/]",
+        "start": "wolf pup",
+        "relation": "IsA",
+        "end": "wolf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/coyote\/n\/wn\/animal\/,\/c\/en\/wolf\/n\/wn\/animal\/]",
+        "start": "coyote",
+        "relation": "IsA",
+        "end": "wolf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/wolf\/n\/wn\/animal\/,\/c\/en\/canine\/n\/wn\/animal\/]",
+        "start": "wolf",
+        "relation": "IsA",
+        "end": "canine"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/timber_wolf\/n\/wn\/animal\/,\/c\/en\/wolf\/n\/wn\/animal\/]",
+        "start": "timber wolf",
+        "relation": "IsA",
+        "end": "wolf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/wolf\/n\/wn\/person\/,\/c\/en\/womanizer\/n\/wn\/person\/]",
+        "start": "wolf",
+        "relation": "IsA",
+        "end": "womanizer"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/red_wolf\/n\/wn\/animal\/,\/c\/en\/wolf\/n\/wn\/animal\/]",
+        "start": "red wolf",
+        "relation": "IsA",
+        "end": "wolf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/white_wolf\/n\/wn\/animal\/,\/c\/en\/wolf\/n\/wn\/animal\/]",
+        "start": "white wolf",
+        "relation": "IsA",
+        "end": "wolf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wolf\/,\/c\/en\/dog\/]",
+        "start": "wolf",
+        "relation": "RelatedTo",
+        "end": "dog"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wolf\/n\/,\/c\/en\/constellation\/]",
+        "start": "wolf",
+        "relation": "RelatedTo",
+        "end": "constellation"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/vulpine\/n\/,\/c\/en\/wolf\/]",
+        "start": "vulpine",
+        "relation": "RelatedTo",
+        "end": "wolf"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wind\/,\/c\/en\/air\/]",
+        "start": "wind",
+        "relation": "RelatedTo",
+        "end": "air"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/blow\/,\/c\/en\/wind\/]",
+        "start": "blow",
+        "relation": "RelatedTo",
+        "end": "wind"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/wind\/,\/c\/en\/blow_to_east\/]",
+        "start": "A wind",
+        "relation": "CapableOf",
+        "end": "blow to the East"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wind\/,\/c\/en\/breeze\/]",
+        "start": "wind",
+        "relation": "RelatedTo",
+        "end": "breeze"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sail\/,\/c\/en\/wind\/]",
+        "start": "sail",
+        "relation": "RelatedTo",
+        "end": "wind"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wind\/,\/c\/en\/moving\/]",
+        "start": "wind",
+        "relation": "RelatedTo",
+        "end": "moving"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wind\/,\/c\/en\/weather\/]",
+        "start": "wind",
+        "relation": "RelatedTo",
+        "end": "weather"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/wind\/,\/c\/en\/blowing_hard\/]",
+        "start": "The wind",
+        "relation": "CapableOf",
+        "end": "be blowing hard"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wind\/,\/c\/en\/moving_air\/]",
+        "start": "wind",
+        "relation": "RelatedTo",
+        "end": "moving air"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wind\/,\/c\/en\/movement\/]",
+        "start": "wind",
+        "relation": "RelatedTo",
+        "end": "movement"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wind\/,\/c\/en\/blows\/]",
+        "start": "wind",
+        "relation": "RelatedTo",
+        "end": "blows"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/weather\/,\/c\/en\/wind\/]",
+        "start": "weather",
+        "relation": "RelatedTo",
+        "end": "wind"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/northwest_wind\/n\/wn\/phenomenon\/,\/c\/en\/wind\/n\/wn\/phenomenon\/]",
+        "start": "northwest wind",
+        "relation": "IsA",
+        "end": "wind"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/prevailing_wind\/n\/wn\/phenomenon\/,\/c\/en\/wind\/n\/wn\/phenomenon\/]",
+        "start": "prevailing wind",
+        "relation": "IsA",
+        "end": "wind"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/chair\/,\/c\/en\/office\/]",
+        "start": "a chair",
+        "relation": "AtLocation",
+        "end": "the office"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/sitting\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "sitting"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/seat\/,\/c\/en\/chair\/]",
+        "start": "seat",
+        "relation": "RelatedTo",
+        "end": "chair"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/seat\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "seat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/chair\/,\/c\/en\/desk\/]",
+        "start": "a chair",
+        "relation": "AtLocation",
+        "end": "a desk"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/furniture\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "furniture"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/sit\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "sit"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cat\/,\/c\/en\/chair\/]",
+        "start": "a cat",
+        "relation": "AtLocation",
+        "end": "a chair"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/table\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "table"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/legs\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "legs"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/armchair\/,\/c\/en\/chair\/]",
+        "start": "An armchair",
+        "relation": "IsA",
+        "end": "a chair"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/chair\/,\/c\/en\/cubicle\/]",
+        "start": "a chair",
+        "relation": "AtLocation",
+        "end": "a cubicle"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/chair\/,\/c\/en\/resting\/]",
+        "start": "a chair",
+        "relation": "UsedFor",
+        "end": "resting"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/chair\/,\/c\/en\/porch\/]",
+        "start": "a chair",
+        "relation": "AtLocation",
+        "end": "the porch"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/sitting_furniture\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "sitting furniture"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/table\/,\/c\/en\/chair\/]",
+        "start": "table",
+        "relation": "RelatedTo",
+        "end": "chair"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/four\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "four"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chair\/,\/c\/en\/seating\/]",
+        "start": "chair",
+        "relation": "RelatedTo",
+        "end": "seating"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/desk\/,\/c\/en\/chair\/]",
+        "start": "desk",
+        "relation": "RelatedTo",
+        "end": "chair"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/home\/,\/c\/en\/house\/]",
+        "start": "home",
+        "relation": "RelatedTo",
+        "end": "house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/room\/,\/c\/en\/house\/]",
+        "start": "room",
+        "relation": "RelatedTo",
+        "end": "house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/computer\/,\/c\/en\/house\/]",
+        "start": "a computer",
+        "relation": "AtLocation",
+        "end": "a house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/carpet\/,\/c\/en\/house\/]",
+        "start": "a carpet",
+        "relation": "AtLocation",
+        "end": "a house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/nest\/,\/c\/en\/house\/]",
+        "start": "nest",
+        "relation": "RelatedTo",
+        "end": "house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/door\/,\/c\/en\/house\/]",
+        "start": "door",
+        "relation": "RelatedTo",
+        "end": "house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/house\/,\/c\/en\/building\/]",
+        "start": "house",
+        "relation": "RelatedTo",
+        "end": "building"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bedroom\/,\/c\/en\/house\/]",
+        "start": "your bedroom",
+        "relation": "AtLocation",
+        "end": "a house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/family\/,\/c\/en\/house\/]",
+        "start": "your family",
+        "relation": "AtLocation",
+        "end": "your house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/furniture\/,\/c\/en\/house\/]",
+        "start": "furniture",
+        "relation": "AtLocation",
+        "end": "a house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/house\/,\/c\/en\/home\/]",
+        "start": "house",
+        "relation": "RelatedTo",
+        "end": "home"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/windows\/,\/c\/en\/house\/]",
+        "start": "windows",
+        "relation": "AtLocation",
+        "end": "a house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/window\/,\/c\/en\/house\/]",
+        "start": "window",
+        "relation": "RelatedTo",
+        "end": "house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bathroom\/,\/c\/en\/house\/]",
+        "start": "a bathroom",
+        "relation": "AtLocation",
+        "end": "a house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/tv\/,\/c\/en\/house\/]",
+        "start": "a tv",
+        "relation": "AtLocation",
+        "end": "your house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/lamp\/,\/c\/en\/house\/]",
+        "start": "a lamp",
+        "relation": "AtLocation",
+        "end": "your house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/couch\/,\/c\/en\/house\/]",
+        "start": "a couch",
+        "relation": "AtLocation",
+        "end": "your house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/servant\/,\/c\/en\/house\/]",
+        "start": "servant",
+        "relation": "RelatedTo",
+        "end": "house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/house\/,\/c\/en\/dwelling\/]",
+        "start": "house",
+        "relation": "RelatedTo",
+        "end": "dwelling"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/house\/,\/c\/en\/living\/]",
+        "start": "house",
+        "relation": "RelatedTo",
+        "end": "living"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/boat\/,\/c\/en\/water\/]",
+        "start": "a boat",
+        "relation": "AtLocation",
+        "end": "the water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/boat\/,\/c\/en\/water\/]",
+        "start": "boat",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/boat\/,\/c\/en\/ship\/]",
+        "start": "boat",
+        "relation": "RelatedTo",
+        "end": "ship"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/boat\/,\/c\/en\/travel_on_water\/]",
+        "start": "a boat",
+        "relation": "UsedFor",
+        "end": "travel on the water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/captain\/,\/c\/en\/boat\/]",
+        "start": "captain",
+        "relation": "RelatedTo",
+        "end": "boat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sail\/,\/c\/en\/boat\/]",
+        "start": "sail",
+        "relation": "RelatedTo",
+        "end": "boat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/boat\/,\/c\/en\/vessel\/]",
+        "start": "boat",
+        "relation": "RelatedTo",
+        "end": "vessel"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/submarine\/,\/c\/en\/boat\/]",
+        "start": "A submarine",
+        "relation": "IsA",
+        "end": "a boat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/rope\/,\/c\/en\/boat\/]",
+        "start": "rope",
+        "relation": "AtLocation",
+        "end": "a boat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/boat\/,\/c\/en\/vehicle\/]",
+        "start": "boat",
+        "relation": "RelatedTo",
+        "end": "vehicle"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/boat\/,\/c\/en\/fishing\/]",
+        "start": "a boat",
+        "relation": "UsedFor",
+        "end": "fishing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/boat\/,\/c\/en\/floating\/]",
+        "start": "boat",
+        "relation": "RelatedTo",
+        "end": "floating"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/boat\/,\/c\/en\/form_of_transportation\/]",
+        "start": "A boat",
+        "relation": "IsA",
+        "end": "a form of transportation"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/boat\/,\/c\/en\/sailing\/]",
+        "start": "a boat",
+        "relation": "UsedFor",
+        "end": "sailing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/boat\/,\/c\/en\/floating_on_water\/]",
+        "start": "a boat",
+        "relation": "UsedFor",
+        "end": "floating on the water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/rudder\/,\/c\/en\/boat\/]",
+        "start": "a rudder",
+        "relation": "AtLocation",
+        "end": "a boat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/boat\/,\/c\/en\/lake\/]",
+        "start": "a boat",
+        "relation": "AtLocation",
+        "end": "a lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/boat\/,\/c\/en\/small\/]",
+        "start": "boat",
+        "relation": "RelatedTo",
+        "end": "small"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/ferry\/,\/c\/en\/boat\/]",
+        "start": "ferry",
+        "relation": "RelatedTo",
+        "end": "boat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/boat\/,\/c\/en\/sailing\/]",
+        "start": "boat",
+        "relation": "RelatedTo",
+        "end": "sailing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/earth\/,\/c\/en\/planet\/]",
+        "start": "earth",
+        "relation": "RelatedTo",
+        "end": "planet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/ground\/,\/c\/en\/earth\/]",
+        "start": "ground",
+        "relation": "RelatedTo",
+        "end": "earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/earth\/,\/c\/en\/spherical\/]",
+        "start": "the earth",
+        "relation": "HasProperty",
+        "end": "spherical"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/earth\/,\/c\/en\/universe\/]",
+        "start": "Earth",
+        "relation": "PartOf",
+        "end": "the universe"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/ocean\/,\/c\/en\/earth\/]",
+        "start": "an ocean",
+        "relation": "AtLocation",
+        "end": "the earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/earth\/,\/c\/en\/molten_core\/]",
+        "start": "the Earth",
+        "relation": "HasA",
+        "end": "a molten core"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/earth\/,\/c\/en\/solar_system\/]",
+        "start": "the Earth",
+        "relation": "AtLocation",
+        "end": "the solar system"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/earth\/,\/c\/en\/atmosphere\/]",
+        "start": "The Earth",
+        "relation": "HasA",
+        "end": "an atmosphere"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/earth\/,\/c\/en\/orbit\/]",
+        "start": "the earth",
+        "relation": "AtLocation",
+        "end": "orbit"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/earth\/,\/c\/en\/our\/]",
+        "start": "earth",
+        "relation": "RelatedTo",
+        "end": "our"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/oxygen\/,\/c\/en\/earth\/]",
+        "start": "oxygen",
+        "relation": "AtLocation",
+        "end": "earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/atlantic_ocean\/,\/c\/en\/earth\/]",
+        "start": "the Atlantic Ocean",
+        "relation": "AtLocation",
+        "end": "the earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/moon\/,\/c\/en\/earth\/]",
+        "start": "moon",
+        "relation": "RelatedTo",
+        "end": "earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/earth\/,\/c\/en\/live_on\/]",
+        "start": "the Earth",
+        "relation": "UsedFor",
+        "end": "live on"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/earth\/,\/c\/en\/our_planet\/]",
+        "start": "earth",
+        "relation": "RelatedTo",
+        "end": "our planet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/earth\/,\/c\/en\/oblate_sphereoid\/]",
+        "start": "The earth",
+        "relation": "IsA",
+        "end": "an oblate sphereoid"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/earth\/,\/c\/en\/planet_in_solar_system\/]",
+        "start": "Earth",
+        "relation": "IsA",
+        "end": "a planet in our solar system"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/earth\/,\/c\/en\/place_name\/]",
+        "start": "Earth",
+        "relation": "IsA",
+        "end": "a place name"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/earth\/,\/c\/en\/oblate_spheroid\/]",
+        "start": "the earth",
+        "relation": "IsA",
+        "end": "an oblate spheroid"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/cheese\/,\/c\/en\/food\/]",
+        "start": "Cheese",
+        "relation": "IsA",
+        "end": "a food"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cheese\/,\/c\/en\/age_well\/]",
+        "start": "cheese",
+        "relation": "CapableOf",
+        "end": "age well"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cheese\/,\/c\/en\/refrigerator\/]",
+        "start": "cheese",
+        "relation": "AtLocation",
+        "end": "the refrigerator"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/brie\/,\/c\/en\/cheese\/]",
+        "start": "Brie",
+        "relation": "IsA",
+        "end": "cheese"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/cheese\/,\/c\/en\/strong_odor\/]",
+        "start": "some cheese",
+        "relation": "HasA",
+        "end": "a strong odor"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cheese\/,\/c\/en\/pizza\/]",
+        "start": "cheese",
+        "relation": "AtLocation",
+        "end": "a pizza"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/cheese\/,\/c\/en\/dairy_product_from_cows\/]",
+        "start": "cheese",
+        "relation": "IsA",
+        "end": "a dairy product from cows"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cheese\/,\/c\/en\/market\/]",
+        "start": "cheese",
+        "relation": "AtLocation",
+        "end": "the market"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/macaroni\/,\/c\/en\/cheese\/]",
+        "start": "macaroni",
+        "relation": "RelatedTo",
+        "end": "cheese"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cheese\/,\/c\/en\/fridge\/]",
+        "start": "cheese",
+        "relation": "AtLocation",
+        "end": "the fridge"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/cheese\/,\/c\/en\/flavor\/]",
+        "start": "Cheese",
+        "relation": "HasA",
+        "end": "a flavor"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/cheese\/,\/c\/en\/noun\/]",
+        "start": "Cheese",
+        "relation": "IsA",
+        "end": "a noun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/cheese\/,\/c\/en\/good_protein_food\/]",
+        "start": "Cheese",
+        "relation": "IsA",
+        "end": "a good protein food"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/gouda\/n\/wn\/food\/,\/c\/en\/cheese\/n\/wn\/food\/]",
+        "start": "Gouda",
+        "relation": "IsA",
+        "end": "cheese"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/edam\/n\/wn\/food\/,\/c\/en\/cheese\/n\/wn\/food\/]",
+        "start": "Edam",
+        "relation": "IsA",
+        "end": "cheese"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/goat_cheese\/n\/wn\/food\/,\/c\/en\/cheese\/n\/wn\/food\/]",
+        "start": "goat cheese",
+        "relation": "IsA",
+        "end": "cheese"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/grated_cheese\/n\/wn\/food\/,\/c\/en\/cheese\/n\/wn\/food\/]",
+        "start": "grated cheese",
+        "relation": "IsA",
+        "end": "cheese"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/limburger\/n\/wn\/food\/,\/c\/en\/cheese\/n\/wn\/food\/]",
+        "start": "Limburger",
+        "relation": "IsA",
+        "end": "cheese"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cheese\/,\/c\/en\/smell_badly\/]",
+        "start": "cheese",
+        "relation": "CapableOf",
+        "end": "smell badly"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mist\/,\/c\/en\/light\/]",
+        "start": "mist",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/lantern\/,\/c\/en\/light\/]",
+        "start": "lantern",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/light\/,\/c\/en\/energy\/]",
+        "start": "light",
+        "relation": "IsA",
+        "end": "energy"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/shade\/,\/c\/en\/light\/]",
+        "start": "shade",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/sun\/,\/c\/en\/light\/]",
+        "start": "the sun",
+        "relation": "UsedFor",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/flash\/,\/c\/en\/light\/]",
+        "start": "flash",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sun\/,\/c\/en\/light\/]",
+        "start": "sun",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/light\/,\/c\/en\/electromagnetic_radiation\/]",
+        "start": "Light",
+        "relation": "IsA",
+        "end": "electromagnetic radiation"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/light\/,\/c\/en\/desk\/]",
+        "start": "light",
+        "relation": "AtLocation",
+        "end": "a desk"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/idea\/,\/c\/en\/light\/]",
+        "start": "idea",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/color\/,\/c\/en\/light\/]",
+        "start": "color",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/stop\/,\/c\/en\/light\/]",
+        "start": "stop",
+        "relation": "RelatedTo",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/flash\/n\/wn\/artifact\/,\/c\/en\/light\/v\/wn\/change\/]",
+        "start": "flash",
+        "relation": "UsedFor",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/corona\/n\/wn\/phenomenon\/,\/c\/en\/light\/n\/wn\/physics\/]",
+        "start": "corona",
+        "relation": "IsA",
+        "end": "light"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/creek\/,\/c\/en\/forest\/]",
+        "start": "a creek",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/birds\/,\/c\/en\/forest\/]",
+        "start": "birds",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/ficus\/,\/c\/en\/forest\/]",
+        "start": "a ficus",
+        "relation": "AtLocation",
+        "end": "the forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/stream\/,\/c\/en\/forest\/]",
+        "start": "a stream",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/forest\/,\/c\/en\/trees\/]",
+        "start": "forest",
+        "relation": "RelatedTo",
+        "end": "trees"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/tree\/,\/c\/en\/forest\/]",
+        "start": "A tree",
+        "relation": "PartOf",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/creature\/,\/c\/en\/forest\/]",
+        "start": "a creature",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/moss\/,\/c\/en\/forest\/]",
+        "start": "moss",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/tree\/,\/c\/en\/forest\/]",
+        "start": "tree",
+        "relation": "RelatedTo",
+        "end": "forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/bear\/,\/c\/en\/forest\/]",
+        "start": "bear",
+        "relation": "RelatedTo",
+        "end": "forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasA\/,\/c\/en\/forest\/,\/c\/en\/many_trees\/]",
+        "start": "A forest",
+        "relation": "HasA",
+        "end": "many trees"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/tress\/,\/c\/en\/forest\/]",
+        "start": "tress",
+        "relation": "AtLocation",
+        "end": "the forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/tree_frogs\/,\/c\/en\/forest\/]",
+        "start": "tree frogs",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/branch\/,\/c\/en\/forest\/]",
+        "start": "a branch",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/stick\/,\/c\/en\/forest\/]",
+        "start": "a stick",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/forest\/,\/c\/en\/woods\/]",
+        "start": "forest",
+        "relation": "RelatedTo",
+        "end": "woods"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/squirrel\/,\/c\/en\/forest\/]",
+        "start": "squirrel",
+        "relation": "RelatedTo",
+        "end": "forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/trees\/,\/c\/en\/forest\/]",
+        "start": "trees",
+        "relation": "AtLocation",
+        "end": "a forest"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/forest\/,\/c\/en\/natural_growth_area\/]",
+        "start": "A forest",
+        "relation": "IsA",
+        "end": "a natural growth area"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/forest\/,\/c\/en\/earth\/]",
+        "start": "a forest",
+        "relation": "AtLocation",
+        "end": "the earth"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/sand\/,\/c\/en\/beach\/]",
+        "start": "sand",
+        "relation": "RelatedTo",
+        "end": "beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/coast\/,\/c\/en\/beach\/]",
+        "start": "coast",
+        "relation": "RelatedTo",
+        "end": "beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/driftwood\/,\/c\/en\/beach\/]",
+        "start": "driftwood",
+        "relation": "AtLocation",
+        "end": "beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/seaweed\/,\/c\/en\/beach\/]",
+        "start": "seaweed",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/ocean\/,\/c\/en\/beach\/]",
+        "start": "the ocean",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wave\/,\/c\/en\/beach\/]",
+        "start": "wave",
+        "relation": "RelatedTo",
+        "end": "beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/beachball\/,\/c\/en\/beach\/]",
+        "start": "a beachball",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/sunscreen\/,\/c\/en\/beach\/]",
+        "start": "sunscreen",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/tourists\/,\/c\/en\/beach\/]",
+        "start": "tourists",
+        "relation": "AtLocation",
+        "end": "beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/broken_glass\/,\/c\/en\/beach\/]",
+        "start": "broken glass",
+        "relation": "AtLocation",
+        "end": "beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/beach_towel\/,\/c\/en\/beach\/]",
+        "start": "a beach towel",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/volleyball\/,\/c\/en\/beach\/]",
+        "start": "a volleyball",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/beach_balls\/,\/c\/en\/beach\/]",
+        "start": "beach balls",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/lifeguards\/,\/c\/en\/beach\/]",
+        "start": "lifeguards",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/grain_of_sand\/,\/c\/en\/beach\/]",
+        "start": "a grain of sand",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/beach_towels\/,\/c\/en\/beach\/]",
+        "start": "beach towels",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/sand_dollars\/,\/c\/en\/beach\/]",
+        "start": "sand dollars",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/umbrella\/,\/c\/en\/beach\/]",
+        "start": "an umbrella",
+        "relation": "AtLocation",
+        "end": "beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/shore\/,\/c\/en\/beach\/]",
+        "start": "a shore",
+        "relation": "AtLocation",
+        "end": "a beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/sun_bather\/,\/c\/en\/beach\/]",
+        "start": "a sun bather",
+        "relation": "AtLocation",
+        "end": "the beach"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/water\/,\/c\/en\/lake\/]",
+        "start": "water",
+        "relation": "AtLocation",
+        "end": "a lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/lake\/,\/c\/en\/water\/]",
+        "start": "lake",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fish\/,\/c\/en\/lake\/]",
+        "start": "a fish",
+        "relation": "AtLocation",
+        "end": "a lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/duck\/,\/c\/en\/lake\/]",
+        "start": "a duck",
+        "relation": "AtLocation",
+        "end": "the lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lake\/,\/c\/en\/body_of_water\/]",
+        "start": "A lake",
+        "relation": "IsA",
+        "end": "a body of water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/boat\/,\/c\/en\/lake\/]",
+        "start": "a boat",
+        "relation": "AtLocation",
+        "end": "a lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/lake\/,\/c\/en\/pond\/]",
+        "start": "lake",
+        "relation": "RelatedTo",
+        "end": "pond"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/lake\/,\/c\/en\/body\/]",
+        "start": "lake",
+        "relation": "RelatedTo",
+        "end": "body"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/river\/,\/c\/en\/lake\/]",
+        "start": "river",
+        "relation": "RelatedTo",
+        "end": "lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/lake\/,\/c\/en\/fishing_in\/]",
+        "start": "a lake",
+        "relation": "UsedFor",
+        "end": "fishing in"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/lake\/,\/c\/en\/water_skiing\/]",
+        "start": "a lake",
+        "relation": "UsedFor",
+        "end": "water-skiing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/lake\/,\/c\/en\/water_body\/]",
+        "start": "lake",
+        "relation": "RelatedTo",
+        "end": "water body"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/lake\/,\/c\/en\/sea\/]",
+        "start": "lake",
+        "relation": "RelatedTo",
+        "end": "sea"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/lake\/,\/c\/en\/park\/]",
+        "start": "a lake",
+        "relation": "AtLocation",
+        "end": "a park"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/loch\/n\/wn\/object\/,\/c\/en\/lake\/n\/wn\/object\/]",
+        "start": "loch",
+        "relation": "IsA",
+        "end": "lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/reservoir\/n\/wn\/artifact\/,\/c\/en\/lake\/n\/wn\/object\/]",
+        "start": "reservoir",
+        "relation": "IsA",
+        "end": "lake"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/lake\/,\/c\/en\/michigan\/]",
+        "start": "a lake",
+        "relation": "AtLocation",
+        "end": "Michigan"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lake\/n\/wn\/object\/,\/c\/en\/body_of_water\/n\/wn\/river\/]",
+        "start": "lake",
+        "relation": "IsA",
+        "end": "body of water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/crown\/,\/c\/en\/hat\/]",
+        "start": "crown",
+        "relation": "RelatedTo",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/hat\/,\/c\/en\/closet\/]",
+        "start": "a hat",
+        "relation": "AtLocation",
+        "end": "a closet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/hat\/,\/c\/en\/protecting_head\/]",
+        "start": "a hat",
+        "relation": "UsedFor",
+        "end": "protecting your head"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/helmet\/,\/c\/en\/hat\/]",
+        "start": "a helmet",
+        "relation": "IsA",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/captain\/,\/c\/en\/hat\/]",
+        "start": "captain",
+        "relation": "RelatedTo",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/hat\/,\/c\/en\/form_of_clothing\/]",
+        "start": "A hat",
+        "relation": "IsA",
+        "end": "a form of clothing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/bowler_hat\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "bowler hat",
+        "relation": "IsA",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/hatband\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "hatband",
+        "relation": "PartOf",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/tyrolean\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "tyrolean",
+        "relation": "IsA",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/sombrero\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "sombrero",
+        "relation": "IsA",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/millinery\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "millinery",
+        "relation": "IsA",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/snap_brim_hat\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "snap-brim hat",
+        "relation": "IsA",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/hat\/,\/c\/en\/keep_sun_out_of_eyes\/]",
+        "start": "a hat",
+        "relation": "UsedFor",
+        "end": "keep sun out of the eyes"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/hat\/,\/c\/en\/waving\/]",
+        "start": "a hat",
+        "relation": "UsedFor",
+        "end": "waving"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/hat\/,\/c\/en\/wearing_on_head\/]",
+        "start": "a hat",
+        "relation": "UsedFor",
+        "end": "wearing on your head"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/hat\/,\/c\/en\/begging\/]",
+        "start": "a hat",
+        "relation": "UsedFor",
+        "end": "begging"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/brim\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "brim",
+        "relation": "PartOf",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/dunce_cap\/n\/wn\/artifact\/,\/c\/en\/hat\/n\/wn\/artifact\/]",
+        "start": "dunce cap",
+        "relation": "IsA",
+        "end": "hat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lion\/,\/c\/en\/animal\/]",
+        "start": "a lion",
+        "relation": "IsA",
+        "end": "an animal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lion\/,\/c\/en\/carnivore\/]",
+        "start": "the lion",
+        "relation": "IsA",
+        "end": "a carnivore"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/lion\/,\/c\/en\/roar\/]",
+        "start": "a lion",
+        "relation": "CapableOf",
+        "end": "roar"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/lion\/,\/c\/en\/africa\/]",
+        "start": "a lion",
+        "relation": "AtLocation",
+        "end": "africa"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/lion\/,\/c\/en\/hunt_zebras\/]",
+        "start": "a lion",
+        "relation": "CapableOf",
+        "end": "hunt zebras"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/chimera\/n\/,\/c\/en\/lion\/]",
+        "start": "chimera",
+        "relation": "RelatedTo",
+        "end": "lion"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lioness\/n\/wn\/animal\/,\/c\/en\/lion\/n\/wn\/animal\/]",
+        "start": "lioness",
+        "relation": "IsA",
+        "end": "lion"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/leo\/n\/,\/c\/en\/lion\/]",
+        "start": "leo",
+        "relation": "RelatedTo",
+        "end": "lion"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lion_cub\/n\/wn\/animal\/,\/c\/en\/lion\/n\/wn\/animal\/]",
+        "start": "lion cub",
+        "relation": "IsA",
+        "end": "lion"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/lion\/n\/wn\/astrology\/,\/c\/en\/person\/n\/wn\/]",
+        "start": "Lion",
+        "relation": "IsA",
+        "end": "person"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/mane\/n\/wn\/animal\/,\/c\/en\/lion\/n\/wn\/animal\/]",
+        "start": "mane",
+        "relation": "PartOf",
+        "end": "lion"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/hole_in_wall\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a hole in a wall"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/laboratory\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a laboratory"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/garage\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "the garage"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/attic\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "the attic"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/cupboard\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a cupboard"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/kitchen\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a kitchen"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/mouse\/,\/c\/en\/mammal\/]",
+        "start": "A mouse",
+        "relation": "IsA",
+        "end": "mammal"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/trap\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a trap"
+    },
+    {
+        "idFact": "\/a\/[\/r\/PartOf\/,\/c\/en\/mouse\/,\/c\/en\/computer\/]",
+        "start": "A mouse",
+        "relation": "PartOf",
+        "end": "a computer"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/sewer\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "sewer"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/cellar\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a cellar"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/desk\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "your desk"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/hole\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a hole"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/disneyland\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "Disneyland"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/grainery\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a grainery"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/desktop\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a desktop"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/pad\/,\/c\/en\/mouse\/]",
+        "start": "a pad",
+        "relation": "UsedFor",
+        "end": "a mouse"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/corn_field\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a corn field"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/abandoned_houses\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "abandoned houses"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/mouse\/,\/c\/en\/grain_bin\/]",
+        "start": "a mouse",
+        "relation": "AtLocation",
+        "end": "a grain bin"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/meadow\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "a meadow"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/garden\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "any garden"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/sky\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "the sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/wax\/,\/c\/en\/bee\/]",
+        "start": "wax",
+        "relation": "RelatedTo",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/bee\/,\/c\/en\/sting\/]",
+        "start": "A bee",
+        "relation": "CapableOf",
+        "end": "sting you"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/bee\/n\/wn\/animal\/,\/c\/en\/hymenopterous_insect\/n\/wn\/animal\/]",
+        "start": "bee",
+        "relation": "IsA",
+        "end": "hymenopterous insect"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/bee\/n\/wn\/group\/,\/c\/en\/social_gathering\/n\/wn\/group\/]",
+        "start": "bee",
+        "relation": "IsA",
+        "end": "social gathering"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/apiary\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "an apiary"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/honeybee\/n\/wn\/animal\/,\/c\/en\/bee\/n\/wn\/animal\/]",
+        "start": "honeybee",
+        "relation": "IsA",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/pumpkin_patch\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "a pumpkin patch"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/orchard\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "an orchard"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/drone\/n\/wn\/animal\/,\/c\/en\/bee\/n\/wn\/animal\/]",
+        "start": "drone",
+        "relation": "IsA",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/quilting_bee\/n\/wn\/group\/,\/c\/en\/bee\/n\/wn\/group\/]",
+        "start": "quilting bee",
+        "relation": "IsA",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/husking_bee\/n\/wn\/group\/,\/c\/en\/bee\/n\/wn\/group\/]",
+        "start": "husking bee",
+        "relation": "IsA",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/andrena\/n\/wn\/animal\/,\/c\/en\/bee\/n\/wn\/animal\/]",
+        "start": "andrena",
+        "relation": "IsA",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/garden_pollinating_flowers\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "a garden pollinating flowers"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/leaf_cutting_bee\/n\/wn\/animal\/,\/c\/en\/bee\/n\/wn\/animal\/]",
+        "start": "leaf-cutting bee",
+        "relation": "IsA",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/mason_bee\/n\/wn\/animal\/,\/c\/en\/bee\/n\/wn\/animal\/]",
+        "start": "mason bee",
+        "relation": "IsA",
+        "end": "bee"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/bee\/,\/c\/en\/honeysuckle_vines\/]",
+        "start": "a bee",
+        "relation": "AtLocation",
+        "end": "honeysuckle vines"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/writing\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "writing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/sheet\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "sheet"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/card\/,\/c\/en\/paper\/]",
+        "start": "card",
+        "relation": "RelatedTo",
+        "end": "paper"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/white\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "white"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/wood\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "wood"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/writing\/,\/c\/en\/paper\/]",
+        "start": "writing",
+        "relation": "RelatedTo",
+        "end": "paper"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/napkin\/,\/c\/en\/paper\/]",
+        "start": "napkin",
+        "relation": "RelatedTo",
+        "end": "paper"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/pulp\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "pulp"
+    },
+    {
+        "idFact": "\/a\/[\/r\/HasProperty\/,\/c\/en\/paper\/,\/c\/en\/crumpled\/]",
+        "start": "Paper",
+        "relation": "HasProperty",
+        "end": "crumpled"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/page\/,\/c\/en\/paper\/]",
+        "start": "page",
+        "relation": "RelatedTo",
+        "end": "paper"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/material\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "material"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/paper\/,\/c\/en\/burn\/]",
+        "start": "paper",
+        "relation": "CapableOf",
+        "end": "burn"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/news\/,\/c\/en\/paper\/]",
+        "start": "news",
+        "relation": "RelatedTo",
+        "end": "paper"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/paper\/,\/c\/en\/drawing\/]",
+        "start": "paper",
+        "relation": "UsedFor",
+        "end": "drawing"
+    },
+    {
+        "idFact": "\/a\/[\/r\/UsedFor\/,\/c\/en\/paper\/,\/c\/en\/make_paper_airplanes\/]",
+        "start": "paper",
+        "relation": "UsedFor",
+        "end": "make paper airplanes"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/write\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "write"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/flat\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "flat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/paper\/,\/c\/en\/book\/]",
+        "start": "paper",
+        "relation": "RelatedTo",
+        "end": "book"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/note\/,\/c\/en\/paper\/]",
+        "start": "note",
+        "relation": "RelatedTo",
+        "end": "paper"
+    },
+    {
+        "idFact": "\/a\/[\/r\/Causes\/,\/c\/en\/lighting_match\/,\/c\/en\/fire\/]",
+        "start": "lighting a match",
+        "relation": "Causes",
+        "end": "fire"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/smoke\/,\/c\/en\/fire\/]",
+        "start": "smoke",
+        "relation": "RelatedTo",
+        "end": "fire"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fire\/,\/c\/en\/burn_things\/]",
+        "start": "fire",
+        "relation": "CapableOf",
+        "end": "burn things"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fire\/,\/c\/en\/hot\/]",
+        "start": "fire",
+        "relation": "RelatedTo",
+        "end": "hot"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fire\/,\/c\/en\/flames\/]",
+        "start": "fire",
+        "relation": "RelatedTo",
+        "end": "flames"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fire\/,\/c\/en\/burning\/]",
+        "start": "fire",
+        "relation": "RelatedTo",
+        "end": "burning"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fire\/,\/c\/en\/flame\/]",
+        "start": "fire",
+        "relation": "RelatedTo",
+        "end": "flame"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/burn\/,\/c\/en\/fire\/]",
+        "start": "burn",
+        "relation": "RelatedTo",
+        "end": "fire"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fire\/,\/c\/en\/heat\/]",
+        "start": "fire",
+        "relation": "RelatedTo",
+        "end": "heat"
+    },
+    {
+        "idFact": "\/a\/[\/r\/IsA\/,\/c\/en\/fire\/,\/c\/en\/combustion\/]",
+        "start": "fire",
+        "relation": "IsA",
+        "end": "combustion"
+    },
+    {
+        "idFact": "\/a\/[\/r\/Causes\/,\/c\/en\/striking_match\/,\/c\/en\/fire\/]",
+        "start": "striking a match",
+        "relation": "Causes",
+        "end": "fire"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fire\/,\/c\/en\/burn_houses\/]",
+        "start": "Fire",
+        "relation": "CapableOf",
+        "end": "burn houses"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/fire\/,\/c\/en\/fireplace\/]",
+        "start": "fire",
+        "relation": "AtLocation",
+        "end": "a fireplace"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/heat\/,\/c\/en\/fire\/]",
+        "start": "heat",
+        "relation": "RelatedTo",
+        "end": "fire"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fire\/,\/c\/en\/heat_room\/]",
+        "start": "Fire",
+        "relation": "CapableOf",
+        "end": "heat a room"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fire\/,\/c\/en\/destroy_forests\/]",
+        "start": "Fire",
+        "relation": "CapableOf",
+        "end": "destroy forests"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fire\/,\/c\/en\/heat_house\/]",
+        "start": "a fire",
+        "relation": "CapableOf",
+        "end": "heat a house"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fire\/,\/c\/en\/need_fuel\/]",
+        "start": "a fire",
+        "relation": "CapableOf",
+        "end": "need fuel"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/fire\/,\/c\/en\/warm_hands\/]",
+        "start": "A fire",
+        "relation": "CapableOf",
+        "end": "warm your hands"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/fire\/,\/c\/en\/smoke\/]",
+        "start": "fire",
+        "relation": "RelatedTo",
+        "end": "smoke"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/sky\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/AtLocation\/,\/c\/en\/cloud\/,\/c\/en\/sky\/]",
+        "start": "a cloud",
+        "relation": "AtLocation",
+        "end": "the sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/white\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "white"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/fluffy\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "fluffy"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/rain\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "rain"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/water\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "water"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/cotton\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "cotton"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/vapor\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "vapor"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/in_sky\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "in sky"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/puffy\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "puffy"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/weather\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "weather"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/fluff\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "fluff"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/mist\/,\/c\/en\/cloud\/]",
+        "start": "mist",
+        "relation": "RelatedTo",
+        "end": "cloud"
+    },
+    {
+        "idFact": "\/a\/[\/r\/CapableOf\/,\/c\/en\/cloud\/,\/c\/en\/hide_sun\/]",
+        "start": "a cloud",
+        "relation": "CapableOf",
+        "end": "hide the sun"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/smoke\/,\/c\/en\/cloud\/]",
+        "start": "smoke",
+        "relation": "RelatedTo",
+        "end": "cloud"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/water_vapor\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "water vapor"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/fluffy_white\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "fluffy white"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/moisture\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "moisture"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/white_fluffy\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "white fluffy"
+    },
+    {
+        "idFact": "\/a\/[\/r\/RelatedTo\/,\/c\/en\/cloud\/,\/c\/en\/air\/]",
+        "start": "cloud",
+        "relation": "RelatedTo",
+        "end": "air"
+    }
+]
