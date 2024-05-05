@@ -77,9 +77,9 @@ function getHelp() { // Display the API documentation
     GET /concepts: Renvoie une liste de tous les concepts uniques dans la table des faits.
     GET /relations: Renvoie une liste de toutes les relations uniques dans la table des faits.
     GET /users: Renvoie une liste de tous les utilisateurs et leurs scores.
-    POST /users: Crée un nouvel utilisateur avec un score de 0. Le nom d'utilisateur et le mot de passe doivent être envoyés dans le corps de la requête.
+    POST /users: CrÃ©e un nouvel utilisateur avec un score de 0. Le nom d'utilisateur et le mot de passe doivent Ã©tre envoyÃ©s dans le corps de la requÃ©te.
 
-    Tous les points de terminaison renvoient des données au format JSON.";
+    Tous les points de terminaison renvoient des donnÃ©es au format JSON.";
 
     echo $documentation;
 }
