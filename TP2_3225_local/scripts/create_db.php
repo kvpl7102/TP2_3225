@@ -1,4 +1,5 @@
 <?php
+include('scripts/conn_db.php');
 
 // Load facts from JSON file
 $facts = json_decode(file_get_contents('facts.json'), true);
@@ -47,21 +48,22 @@ $conn->query("
     CREATE TABLE IF NOT EXISTS Users (
         idUser INT AUTO_INCREMENT PRIMARY KEY,
         username VARCHAR(255) UNIQUE NOT NULL,
-        password VARCHAR(255) NOT NULL
+        password VARCHAR(255) NOT NULL,
+        score INT DEFAULT 0
     )
 ");
 
 // Insert into the table users
-$stmt = $conn->prepare("INSERT INTO Users (username, password) VALUES (?, ?)");
+$stmt = $conn->prepare("INSERT INTO Users (username, password, score) VALUES (?, ?, ?)");
 $users = array(
-    array('ift3225', '5223tfi'),
-    array('user', 'userpassword'),
-    array('guest', 'guestpassword'),
-    array('test1', 'test1password'),
-    array('test2', 'test2password')
+    array('ift3225', '5223tfi', 0),
+    array('user', 'userpassword', 0),
+    array('guest', 'guestpassword', 0),
+    array('test1', 'test1password', 0),
+    array('test2', 'test2password', 0)
 );
 foreach ($users as $user) {
-    $stmt->bind_param("ss", $user[0], $user[1]);
+    $stmt->bind_param("sss", $user[0], $user[1], $user[2]);
     $stmt->execute();
 }
 
