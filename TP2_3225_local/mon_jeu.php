@@ -1,6 +1,6 @@
 <?php 
     include('scripts/conn_db.php');
-
+    session_start();//global session
     // Login validation for the user using Db
     if (isset($_POST['submit'])) { // If the submit button is clicked
         $username = $_POST['username'];
@@ -17,14 +17,15 @@
 
         $userInfo = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-        if (count($userInfo) > 0) {
-            
+        if (count($userInfo) > 0) {    
             $_SESSION['user'] = $username;            
             header("Location: #/menu");
-            
-        } else {
-            echo "invalid credentials";
-            // header("Location: #/login");
+             
+        }
+        else{
+            if(!isset($_SESSION['user'])){
+                echo "<script>alert('Invalid credential')</script>";
+            } 
         }
     }
 ?>
@@ -76,6 +77,10 @@
                     <li><b>#/dump/faits</b> : Affiche une table contenant les faits stockés dans la base de données avec un système de pagination.</li>
                     <li><b>#/jeux/quisuisje/:temps/:indice</b> : Jeu 'Qui suis-je?' où l'utilisateur doit deviner un concept à partir d'indices fournis.</li>
                     <li><b>#/jeux/related/:temps</b> : Jeu 'Related' où l'utilisateur doit entrer des mots liés à un concept donné.</li>
+                    <li><b>#/concept/:langue/:concept</b> : Affiche une table avec les faits dans ConceptNet qui commencent par le concept.</li>
+                    <li><b>#/relation/:relation/from/:langue/:concept</b> : Affiche les faits( :langue/ :concept, :relation,x) pour tout x nœud end dans Concept-Net</li>
+                    <li><b>#/relation/:relation</b> : Affiche les faits le concept de départ n'est pas spécifié</li>
+                    
                     
                 </ul>
             `);
@@ -93,10 +98,18 @@
                         <label for="password" class="form-label">Mot de passe</label>
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
-                    <button type="submit" name="submit" class="btn btn-primary">Se connecter</button>
+                    <button id="submit" type="submit" name="submit" class="btn btn-primary">Se connecter</button>
                 </form>
+                
             `);
+            
+
             });
+
+            
+            
+
+            
 
             this.get('#/menu', function() {
 
@@ -113,41 +126,97 @@
             });
 
             this.get('#/logout', function() {
-                sessionStorage.removeItem('user');
+                $('#game-content').html(`
+                <?php 
+                    unset($_SESSION['user']);
+                    
+                ?>
+                `);
                 alert('Vous avez été déconnecté.');
                 location.hash = '#/help';
             });
 
+            //GAME1/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             this.get('#/jeux/quisuisje/:temps/:indice', function() {
                 var totalTime = this.params.temps || 60;
                 var intervalTime = this.params.indice || 10;
-                var correctAnswer = "chat"; //Start or End Concept(depends)
-                var hints = ["CapableOf miauler", "AtLocation dans la maison",
-                    "ReceivesAction caressé"
-                ]; //(Start+Realation)or(Relation + end)
                 var currentIndex = 0;
                 var score = Math.ceil(totalTime / intervalTime);
                 var interval;
 
-                $('#game-content').html('<h2>Qui suis-je ?</h2>' +
-                    '<div id="question"></div>' +
-                    '<input type="text" id="answer" placeholder="Votre réponse ici">' +
-                    '<button id="submit-button" class="btn btn-primary rounded-pill">Soumettre</button>'
-                );
+                $('#game-content').html(`<h2>Qui suis-je ?</h2> 
+                    <div id="question"></div>
+                    <input type="text" id="answer" placeholder="Votre réponse ici">
+                    <button id="submit-button" class="btn btn-primary rounded-pill">Soumettre</button>
+                    <?php
+                        include('scripts/conn_db.php');
+                        //MOT RANDOM/////////////////////////////////////////////////////////////
+                        
+                        $query_rand = "SELECT start FROM facts ORDER BY RAND() LIMIT 1" ;
+                        $result_rand = $conn->query($query_rand);
+                        
+                        if (!$result_rand) {
+                            echo "Error: " . $query_rand . "<br>" . $conn->error;
+                        }
+                        
+                
+                        $motAle = mysqli_fetch_all($result_rand, MYSQLI_ASSOC);
+                        
+                        if (count($motAle) > 0) {
+                            foreach ($motAle as $motAle) {
+                                //echo "<td style='text-align: center'>" . strtolower( $motAle["start"]) . "</td>";
+                                echo "<input type='text' id='iduser' style='display:none' value='". strtolower( $motAle["start"]) .  "'>";
+                                //HINTS////////////////////////////////////////
+                                $hintsArray = array();
+                                $correctAns= strtolower( $motAle["start"]);
+                                $query_rela = "SELECT * FROM facts where start='$correctAns' or end='$correctAns' ORDER BY RAND() LIMIT 6" ;
+                                $result_rela = $conn->query($query_rela);
+                                if (!$result_rela) {
+                                    echo "Error: " . $query_rela . "<br>" . $conn->error;
+                                }
+                                $hints = mysqli_fetch_all($result_rela, MYSQLI_ASSOC);
+                                if (count($hints) > 0) {
+                                    foreach ($hints as $hints) {
+                                        $conceptHint="";
+                                        //echo "<td style='text-align: center'>" . strtolower( $hints["start"]) . "</td>";
+                                        //echo "<td style='text-align: center'>" . $correctAns . "</td>";
+                                        if(strcasecmp(strtolower( $hints["start"]),$correctAns)==0 ){
+                                            $conceptHint="??? ".$conceptHint=strtolower( $hints["relation"])." ".strtolower( $hints["end"]);
+                                        }else{
+                                            $conceptHint=$conceptHint=strtolower( $hints["start"])." ".strtolower( $hints["relation"])." ???";
+                                        }
+                                        array_push($hintsArray,$conceptHint);
+                                        //echo "<td style='text-align: center'>" . strtolower( $hints["relation"]) . "</td>";
+                                        
+                                    }                            
+                                }
+                            }                            
+                        }
+
+                        
+                        
+                
+                        
+                
+                    ?>
+                `);
+                var correctAnswer = $('#iduser').val();
+                var hints = <?php echo json_encode($hintsArray); ?>;
+                
 
                 function showHint() {
-                    if (currentIndex < hints.length && $('#result').text() === "") {
+                    if (currentIndex < hints.length) {
                         $('#question').text(hints[currentIndex]);
                         currentIndex++;
                         score--;
-                    } else {
+                    } else if (currentIndex >= hints.length) {
                         clearInterval(interval);
-                        $('#question').text("Temps écoulé! La réponse était : " +
-                            correctAnswer);
+                        $('#question').text("Temps écoulé! La réponse était : " + correctAnswer);
                         $('#score').text("Score final : " + score);
                     }
                 }
 
+                
                 interval = setInterval(showHint, intervalTime * 1000);
                 showHint();
 
@@ -158,21 +227,74 @@
                         $('#score').text("Score final : " + score);
                         clearInterval(interval);
                     } else {
+                        showHint();
                         $('#result').text("Incorrect. Essayez encore!");
                     }
                 });
             });
 
+            //GAME2////////////////////////////////////////////////////////////////////////////////////
             this.get('#/jeux/related/:temps?', function() {
                 var totalTime = this.params.temps || 60;
-                var concept = "chat"; // Simulé, remplacer par un concept aléatoire de la base
+                
                 var timeoutId;
 
-                $('#game-content').html(
-                    '<h2>Related Words to "' + concept + '"</h2>' +
-                    '<input type="text" id="related-words" class="form-control mb-3" placeholder="Entrez des mots, séparés par des virgules">' +
-                    '<button id="submit-words" class="btn btn-primary">Soumettre</button>'
-                );
+                $('#game-content').html(`
+                    <?php
+                        include('scripts/conn_db.php');
+                        //MOT RANDOM2/////////////////////////////////////////////////////////////
+                        
+                        $query_rand2 = "SELECT start FROM facts ORDER BY RAND() LIMIT 1" ;
+                        $result_rand2 = $conn->query($query_rand2);
+                        
+                        if (!$result_rand2) {
+                            echo "Error: " . $query_rand2 . "<br>" . $conn->error;
+                        }
+                        
+                
+                        $motAle2 = mysqli_fetch_all($result_rand2, MYSQLI_ASSOC);
+                        
+                        if (count($motAle2) > 0) {
+                            foreach ($motAle2 as $motAle2) {
+                                echo "<h2 id='iduser2'>Related Words to " . strtolower( $motAle2["start"]) ."</h2>";
+                                echo "<input type='text' id='iduser' style='display:none' value='". strtolower( $motAle["start"]) .  "'>";
+                                //RELATIONS////////////////////////////////////////
+                                $relArray = array();
+                                $correctAns2= strtolower( $motAle2["start"]);
+                                $query_rela2 = "SELECT * FROM facts where start='$correctAns2' or end='$correctAns2'" ;
+                                $result_rela2 = $conn->query($query_rela2);
+                                if (!$result_rela2) {
+                                    echo "Error: " . $query_rela2 . "<br>" . $conn->error;
+                                }
+                                $relationGame = mysqli_fetch_all($result_rela2, MYSQLI_ASSOC);
+                                if (count($relationGame) > 0) {
+                                    foreach ($relationGame as $relationGame) {
+                                        $conceptRelated="";
+                                        //echo "<td style='text-align: center'>" . strtolower( $hints["start"]) . "</td>";
+                                        //echo "<td style='text-align: center'>" . $correctAns . "</td>";
+                                        if(strcasecmp(strtolower( $relationGame["start"]),$correctAns2)==0 ){
+                                            $conceptRelated=$conceptRelated.strtolower( $relationGame["end"]).'';
+                                        }else{
+                                            $conceptRelated=$conceptRelated.strtolower( $relationGame["start"]).'';
+                                        }
+                                        //echo $conceptRelated;
+                                        array_push($relArray,$conceptRelated);
+                                        //echo "<td style='text-align: center'>" . strtolower( $hints["relation"]) . "</td>";
+                                        
+                                    }                            
+                                }
+                                //echo "<h2 id='iduser2'>Related ::::" . strtolower($relArray[0]) ."</h2>";
+                                //echo "<h2 id='iduser2'>Related ::::" . strtolower($relArray[1]) ."</h2>";
+                                //echo "<h2 id='iduser2'>Related ::::" . strtolower($relArray[2]) ."</h2>";
+                                
+                            }
+                        }    
+                    ?>
+                    <input type="text" id="related-words" class="form-control mb-3" placeholder="Entrez des mots, séparés par des virgules">
+                    <button id="submit-words" class="btn btn-primary">Soumettre</button>
+                    
+                `);
+                var concept = <?php echo json_encode($correctAns2); ?>; // Simulé, remplacer par un concept aléatoire de la base
 
                 timeoutId = setTimeout(() => {
                     evaluateAndDisplayResults();
@@ -186,25 +308,24 @@
                 function evaluateAndDisplayResults() {
                     var userInput = $('#related-words').val();
                     var words = userInput.split(',');
-                    var
-                        validWords = []; // Simulation, remplacer par les vrais mots valides tirés de ConceptNet
+                    var validWords = <?php echo json_encode($relArray); ?>; 
+                    var foundedWords=[]
                     var invalidWords = [];
 
                     words.forEach(word => {
                         word = word.trim().toLowerCase();
-                        // Ici, on vérifiera si le mot est lié au concept (simulation)
-                        if (word === concept) { // Simplifié pour l'exemple
-                            validWords.push(word);
+                        if (validWords.includes(word)) { 
+                            foundedWords.push(word);
                         } else {
                             invalidWords.push(word);
                         }
                     });
 
                     $('#result').html(
-                        '<p>Mots valides: ' + validWords.join(', ') + '</p>' +
+                        '<p>Mots valides: ' + foundedWords.join(', ') + '</p>' +
                         '<p>Mots invalides: ' + invalidWords.join(', ') + '</p>'
                     );
-                    $('#score').text('Score: ' + validWords.length);
+                    $('#score').text('Score: ' + foundedWords.length);
                 }
             });
 
@@ -227,7 +348,7 @@
                                             $numusers = mysqli_fetch_all($result_numusers, MYSQLI_ASSOC);
                                             echo "<h4>Nombre d'utilisateurs: " . $numusers[0]['COUNT(DISTINCT idUser)'] . "</h4>";
                                         } else {
-                                            echo "<h4>�chec de requ�te � la base :(</h4>";
+                                            echo "<h4>Échec de requête à la base :(</h4>";
                                         }
                                         
                                         // --------------------------------------------------------------
@@ -238,7 +359,7 @@
                                             $facts = mysqli_fetch_all($result_facts, MYSQLI_ASSOC);
                                             echo "<h4>Nombre de faits: " . $facts[0]['COUNT(DISTINCT idFact)'] . "</h4>";
                                         } else {
-                                            echo "<h4>�chec de requ�te � la base :(</h4>";
+                                            echo "<h4>Échec de requête à la base :(</h4>";
                                         }
 
                                         // --------------------------------------------------------------
@@ -249,7 +370,7 @@
                                             $concepts = mysqli_fetch_all($result_concepts, MYSQLI_ASSOC);
                                             echo "<h4>Nombre de concepts: " . $concepts[0]['COUNT(DISTINCT start, end)'] . "</h4>";
                                         } else {
-                                            echo "<h4>�chec de requ�te � la base :(</h4>";
+                                            echo "<h4>Échec de requête à la base :(</h4>";
                                         }
 
                                         // --------------------------------------------------------------
@@ -260,7 +381,7 @@
                                             $relations = mysqli_fetch_all($result_relations, MYSQLI_ASSOC);
                                             echo "<h4>Nombre de relations: " . $relations[0]['COUNT(DISTINCT relation)'] . "</h4>";
                                         } else {
-                                            echo "<h4>�chec de requ�te � la base :(</h4>";
+                                            echo "<h4>Échec de requête à la base :(</h4>";
                                         }
                                     ?>
                                 </div>  
